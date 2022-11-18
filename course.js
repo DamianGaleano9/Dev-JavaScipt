@@ -132,7 +132,7 @@ function strings() {
     
     // Use slice to return from the "w" to the end of the sentence
     var str = "The five boxing wizards jump quickly";
-    return (str.slice(16,36));
+    return (str.slice(16));
     
 }
 
