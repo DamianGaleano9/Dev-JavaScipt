@@ -1,4 +1,4 @@
-var ageOne = 12;
+/* var ageOne = 12;
 
 ageOne.toString();
 
@@ -76,11 +76,11 @@ console.log(number.search());
 console.log(str.lastIndexOf("the"));
 
 
-console.log(str.indexOf("lazy"));
+console.log(str.indexOf("lazy")); */
 
 /* INDEXOF LASTINDEXOF*/
 
-
+/* 
 var str = "the quick brown fox jumped over the lazy dog"
 
 
@@ -106,21 +106,21 @@ console.log(indexOfOver =  stringTwo.indexOf("over"));
 
 stringThree = "Never gonna give you up never gonna let you down"
 
-console.log(lastIndex = stringThree.lastIndexOf("never"));
+console.log(lastIndex = stringThree.lastIndexOf("never")); */
 
 /*SLICE*/
-console.log(str.charAt(8));
+/* console.log(str.charAt(8));
 
 console.log(str.slice(10));
 console.log(str.slice(-18));
-console.log(str.slice(10, 26));
+console.log(str.slice(10, 26)); */
 
 
 
 /*TRIM */
 
 
-console.log(str.slice(4, 10).trim());
+/* console.log(str.slice(4, 10).trim()); */
 
 
 
@@ -128,7 +128,7 @@ console.log(str.slice(4, 10).trim());
 //We have given you the sentences already, please fill in the returns to make the test pass
 // EXAMPLE "return (str.toUpperCase());"
 
-function strings() {
+/* function strings() {
     
     // Use slice to return from the "w" to the end of the sentence
     var str = "The five boxing wizards jump quickly";
@@ -136,42 +136,138 @@ function strings() {
     
 }
 
-console.log(strings());
+console.log(strings()); */
+
+/*OPERATIONS*/
+/* console.log(2+2);
+console.log(5%2);
+console.log(22222%2);
+
+
+var num = 2;
+
+console.log(num++);
+console.log(num++);
+console.log(num++);
+console.log(num++);
+console.log(num++);
+console.log(num++);
+console.log(num++);
+console.log(num++);
+console.log(num++);
+console.log(num++);
+console.log(num++);
+console.log(num++);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+console.log(num--);
+
+
+
+var someOne = 10;
+var otherSomeOne  = -someOne;
+console.log(otherSomeOne);
+
+
+var sum = 0;
+var numberOne = 80;
+var numberTwo = 100;
+
+console.log(sum+= numberOne);
+console.log(sum);
+console.log(sum+= numberTwo);
+console.log(sum-=numberOne);
+console.log(sum*=numberTwo);
+console.log(); */
+
+/* TEST */
+
+//Use Compound Assignment Operators to solve the above problem
+
+/* function mathTest() {
+    //please do not delete this
+    var sum = 0;
+    
+    var lemons = 250;
+    var limes = 36;
+    
+    var lemonade = lemons + limes;
+    
+    sum += lemonade;
+    
+    //please do not delete this
+    return sum;
+}
+
+console.log(mathTest());
+ */
+
+
+/*ORDERS OF OPERATIONS 
+PEDMAS PEMDAS 
+
+Please Excuse My Dear Sally
+
+Parenthesis 
+Exponents
+Multiplication
+Division
+Addition
+Sustraction
+
+*/
+
+
+// my name is //
+
+
+// if(edad !== edaDos) {
+//     console.log("no son iguales");
+// } else if(edad === edaDos) {
+//     console.log("somos hermanos")
+
+// }
+
+// var edad = 10;
+// var edaDos = "12";
+
+// // if (edad >= 25) {
+// //     console.log('Old enough to rent a car');
+// // }
+
+
+// if (edad <= 10) {
+//     console.log('You can eat from the kids menu');
+// }
+
+
+// Create a conditional that returns true, using the starting code below.
 
 
 
 
+answer =  false ;
+
+if (answer !== true) {
+    console.log(answer = true);
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log();
