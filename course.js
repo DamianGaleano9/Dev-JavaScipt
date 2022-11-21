@@ -264,10 +264,159 @@ Sustraction
 
 
 
-answer =  false ;
+// answer = false;
 
-if (answer !== true) {
-    console.log(answer = true);
+// if (answer !== true) {
+//     console.log(answer = true);
+// }
+
+
+// console.log(answer);
+
+// // logic operators 
+
+// var one = true;
+// var two = true;
+
+// if (one && two) {
+//     console.log('Ampersand its working');
+// } else {
+//     console.log('No ampersand its not working');
+// }
+
+// var ageJuan = 30;
+
+
+
+// if(ageJuan <= 28) {
+//     console.log('Juan is over');
+
+// var age = 30;
+
+// if(age >= 31) {
+//     console.log('You can eat from the kids menu');
+// } else {
+//     console.log('Adult menu time for you!');
+// }
+
+
+// Write a condition that returns true if you have more than 50 watermelons.
+
+// function watermelonParty() {
+    
+//     watermelons = 50;
+    
+//     if (watermelons >= 50) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(watermelonParty());
+
+
+
+// function watermelonParty() {
+    
+//     watermelons = ;
+    
+//     if (watermelons > 50) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(watermelonParty());
+
+// var damianAge = 34;
+
+// if(damianAge <= 10) {
+//     console.log("You can eat from the kid's menu");
+//     console.log("You are not old enough to drive");
+//     console.log("You are not old enough to rent a car");
+// } else if (damianAge > 16 && damianAge < 25){
+//     console.log("You can not eat from the kid's menu");
+//     console.log("You are not old enough to drive");
+//     console.log("You are not old enough to rent a car");
+// } else if (damianAge >= 25){
+//     console.log("You can not eat from the kid's menu");
+//     console.log("You are old enough to drive");
+//     console.log("You are old enough to rent a car");
+// }
+
+
+// Create a condition that allows a 15 year old to get a permit, but can't get a license.
+
+
+function kid() {
+    age = 15;
+    if (age < 15) {
+        console.log("You are not old to get a permit");
+        console.log("You are not old to get a license");
+    }
+    else if(age >= 15 && age <= 18) {
+        console.log("You are old to get a permit");
+        console.log("You are not old to get a license");
+    } else if (age >= 18) {
+        console.log("You are old to get a permit");
+        console.log("You are old to get a license");
+    } 
+};
+
+kid();
+
+
+// swicth case
+
+var dataPoint = 24;
+
+switch (typeof dataPoint) {
+    case 'string': 
+        console.log('It is an string');
+        break;
+
+    case 'number': 
+        console.log('It is an number');
+        break;
+
+    case 'boolean': 
+        console.log('It is an boolean');
+        break;
+        default: 
+        console.log('no matches');
 }
 
 
+
+// function switchStatement() {
+    
+//     //Write your switch statement within this function
+//     var num = 9;
+//     switch(typeof num) {
+//         case 'number': 
+//             return 'number';
+//             break;
+//             default:
+//             return 'not a number';    
+//         }
+// }
+
+// console.log(switchStatement());
+
+
+function switchStatement() {
+    
+    //Write your switch statement within this function
+    var num = 9;
+    switch(typeof num) {
+        case 'number':
+            return 'number';
+            break;
+            default :
+            return 'it is not a number';
+    }
+}
+
+console.log(switchStatement());
