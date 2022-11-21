@@ -406,17 +406,68 @@ switch (typeof dataPoint) {
 // console.log(switchStatement());
 
 
-function switchStatement() {
+// function switchStatement() {
     
-    //Write your switch statement within this function
-    var num = 9;
-    switch(typeof num) {
-        case 'number':
-            return 'number';
-            break;
-            default :
-            return 'it is not a number';
+//     //Write your switch statement within this function
+//     var num = 9;
+//     switch(typeof num) {
+//         case 'number':
+//             return 'number';
+//             break;
+//             default :
+//             return 'it is not a number';
+//     }
+// }
+
+// console.log(switchStatement());
+
+function ageVerification(age, pay, entry) {
+    // if(age > 25) {
+    //     console.log('can rent a car');
+    // } else {
+    //     console.log('is not enough old enough yet');
+    // }
+
+    let answer = age > 25 ? 'cant rent a car' : "can't rent a car";
+    console.log(answer);
+
+    let creditCard = pay >= 10 ? 'you can pay with credit card' : 'Only cash';
+    console.log(creditCard);
+
+    let entryCollege = entry < 8 ? 'Welcome you can acces' : 'You were late is close';
+    console.log(entryCollege);
+
+}
+
+console.log(ageVerification(26,5,8));
+
+
+function adminControls (user) {
+    if(user){
+        if(user.admin) {
+            console.log ('Showing admin controls .....');
+        } else {
+            console.log('You need to be an admin');
+        }  
+    }   else {
+            console.log('You need to be logged in');
     }
 }
 
-console.log(switchStatement());
+let userOne = {
+    name: 'Salvador',
+    admin: false
+}
+
+let userTwo = {
+    name: 'Massimo',
+    admin: true
+}
+
+let userThree = {
+    name: 'Damian',
+    admin: true
+}
+
+console.log(adminControls(userTwo));
+
