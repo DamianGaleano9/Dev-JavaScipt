@@ -443,15 +443,18 @@ console.log(ageVerification(26,5,8));
 
 
 function adminControls (user) {
-    if(user){
-        if(user.admin) {
-            console.log ('Showing admin controls .....');
-        } else {
-            console.log('You need to be an admin');
-        }  
-    }   else {
-            console.log('You need to be logged in');
-    }
+    // if(user){
+    //     if(user.admin) {
+    //         console.log ('Showing admin controls .....');
+    //     } else {
+    //         console.log('You need to be an admin');
+    //     }  
+    // }   else {
+    //         console.log('You need to be logged in');
+    // }
+
+    let response = user ? user.admin ? 'Showing admin controls' : 'You need to admin': 'You need to be a logged';
+    console.log(response);
 }
 
 let userOne = {
@@ -464,10 +467,23 @@ let userTwo = {
     admin: true
 }
 
-let userThree = {
-    name: 'Damian',
-    admin: true
-}
-
+let userThree = null;
 console.log(adminControls(userTwo));
 
+
+let ageDrink = 16;
+
+function permision (ageDrink) {
+
+    if(ageDrink >= 21) {
+        console.log("Drink Juice");
+        } else {
+       console.log("Drink Beer");
+    }
+
+    // let answer = ageDrink > 14 ? "Drink Juice" : "Drink Beer" ;
+    // console.log(answer);
+}
+
+
+console.log(permision(ageDrink));
