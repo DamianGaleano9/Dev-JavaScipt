@@ -1,392 +1,392 @@
-/* var ageOne = 12;
+// /* var ageOne = 12;
 
-ageOne.toString();
+// ageOne.toString();
 
 
 
-var number = "12";
+// var number = "12";
 
-parseInt(12);
+// parseInt(12);
 
 
-console.log(number);
+// console.log(number);
 
 
 
-var str = "the quick brown fox jumped over the lazy dog"
+// var str = "the quick brown fox jumped over the lazy dog"
 
-console.log(str.charAt(2));
+// console.log(str.charAt(2));
 
 
-console.log(str.concat("again and again"));
+// console.log(str.concat("again and again"));
 
-str.includes("lazy");
-console.log(str.includes("lazy"));
+// str.includes("lazy");
+// console.log(str.includes("lazy"));
 
 
-console.log(str.startsWith("the"));
+// console.log(str.startsWith("the"));
 
-console.log(str.endsWith("dog"));
+// console.log(str.endsWith("dog"));
 
-console.log(str.match());
+// console.log(str.match());
 
 
-console.log(str.replace("fox", "horse"));
+// console.log(str.replace("fox", "horse"));
 
 
-string = "Hello, what happened to all the pie?"
+// string = "Hello, what happened to all the pie?"
 
-console.log(string.startsWith("H"));
-console.log(string.endsWith("?"));
+// console.log(string.startsWith("H"));
+// console.log(string.endsWith("?"));
 
-string = "Hello, what happened to all the pie?"
+// string = "Hello, what happened to all the pie?"
 
-console.log(string.startsWith("H"));
-console.log(string.endsWith("?"));
+// console.log(string.startsWith("H"));
+// console.log(string.endsWith("?"));
 
 
-string = "Hello, what happened to all the pie?"
+// string = "Hello, what happened to all the pie?"
 
-console.log(string.repeat(4));
+// console.log(string.repeat(4));
 
-console.log();
+// console.log();
 
 
 
 
-console.log(str.toUpperCase());
-console.log(str.toLocaleLowerCase());
+// console.log(str.toUpperCase());
+// console.log(str.toLocaleLowerCase());
 
 
 
-var messyString = "          hy _there     ";
-console.log(messyString.trim());
+// var messyString = "          hy _there     ";
+// console.log(messyString.trim());
 
-var numbers = ("555-555-5555");
-console.log(numbers.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/));
+// var numbers = ("555-555-5555");
+// console.log(numbers.match(/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/));
 
 
-console.log("foo 555 555 55555 is my number".search((/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/)));
+// console.log("foo 555 555 55555 is my number".search((/((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}/)));
 
 
-console.log(str.indexOf("lazy"));
+// console.log(str.indexOf("lazy"));
 
-console.log(number.search());
+// console.log(number.search());
 
-console.log(str.lastIndexOf("the"));
+// console.log(str.lastIndexOf("the"));
 
 
-console.log(str.indexOf("lazy")); */
+// console.log(str.indexOf("lazy")); */
 
-/* INDEXOF LASTINDEXOF*/
+// /* INDEXOF LASTINDEXOF*/
 
-/* 
-var str = "the quick brown fox jumped over the lazy dog"
+// /* 
+// var str = "the quick brown fox jumped over the lazy dog"
 
 
-var str2 = str.concat(" new line new");
+// var str2 = str.concat(" new line new");
 
-console.log(str2);
+// console.log(str2);
 
 
 
-console.log(str2.indexOf("new"));
-console.log(str2.lastIndexOf("new"));
+// console.log(str2.indexOf("new"));
+// console.log(str2.lastIndexOf("new"));
 
-stringOne = "The dog meows"
+// stringOne = "The dog meows"
 
-console.log(replacedString =  stringOne.replace("dog", "cat"));
+// console.log(replacedString =  stringOne.replace("dog", "cat"));
 
 
-stringTwo = "The cow jumped over the moon"
+// stringTwo = "The cow jumped over the moon"
 
-console.log(indexOfOver =  stringTwo.indexOf("over"));
+// console.log(indexOfOver =  stringTwo.indexOf("over"));
 
 
 
-stringThree = "Never gonna give you up never gonna let you down"
+// stringThree = "Never gonna give you up never gonna let you down"
 
-console.log(lastIndex = stringThree.lastIndexOf("never")); */
+// console.log(lastIndex = stringThree.lastIndexOf("never")); */
 
-/*SLICE*/
-/* console.log(str.charAt(8));
+// /*SLICE*/
+// /* console.log(str.charAt(8));
 
-console.log(str.slice(10));
-console.log(str.slice(-18));
-console.log(str.slice(10, 26)); */
+// console.log(str.slice(10));
+// console.log(str.slice(-18));
+// console.log(str.slice(10, 26)); */
 
 
 
-/*TRIM */
+// /*TRIM */
 
 
-/* console.log(str.slice(4, 10).trim()); */
+// /* console.log(str.slice(4, 10).trim()); */
 
 
 
-/*TETS*/
-//We have given you the sentences already, please fill in the returns to make the test pass
-// EXAMPLE "return (str.toUpperCase());"
+// /*TETS*/
+// //We have given you the sentences already, please fill in the returns to make the test pass
+// // EXAMPLE "return (str.toUpperCase());"
 
-/* function strings() {
+// /* function strings() {
     
-    // Use slice to return from the "w" to the end of the sentence
-    var str = "The five boxing wizards jump quickly";
-    return (str.slice(16));
+//     // Use slice to return from the "w" to the end of the sentence
+//     var str = "The five boxing wizards jump quickly";
+//     return (str.slice(16));
     
-}
-
-console.log(strings()); */
-
-/*OPERATIONS*/
-/* console.log(2+2);
-console.log(5%2);
-console.log(22222%2);
-
-
-var num = 2;
-
-console.log(num++);
-console.log(num++);
-console.log(num++);
-console.log(num++);
-console.log(num++);
-console.log(num++);
-console.log(num++);
-console.log(num++);
-console.log(num++);
-console.log(num++);
-console.log(num++);
-console.log(num++);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-console.log(num--);
-
-
-
-var someOne = 10;
-var otherSomeOne  = -someOne;
-console.log(otherSomeOne);
-
-
-var sum = 0;
-var numberOne = 80;
-var numberTwo = 100;
-
-console.log(sum+= numberOne);
-console.log(sum);
-console.log(sum+= numberTwo);
-console.log(sum-=numberOne);
-console.log(sum*=numberTwo);
-console.log(); */
-
-/* TEST */
-
-//Use Compound Assignment Operators to solve the above problem
-
-/* function mathTest() {
-    //please do not delete this
-    var sum = 0;
-    
-    var lemons = 250;
-    var limes = 36;
-    
-    var lemonade = lemons + limes;
-    
-    sum += lemonade;
-    
-    //please do not delete this
-    return sum;
-}
-
-console.log(mathTest());
- */
-
-
-/*ORDERS OF OPERATIONS 
-PEDMAS PEMDAS 
-
-Please Excuse My Dear Sally
-
-Parenthesis 
-Exponents
-Multiplication
-Division
-Addition
-Sustraction
-
-*/
-
-
-// my name is //
-
-
-// if(edad !== edaDos) {
-//     console.log("no son iguales");
-// } else if(edad === edaDos) {
-//     console.log("somos hermanos")
-
 // }
 
-// var edad = 10;
-// var edaDos = "12";
+// console.log(strings()); */
 
-// // if (edad >= 25) {
-// //     console.log('Old enough to rent a car');
+// /*OPERATIONS*/
+// /* console.log(2+2);
+// console.log(5%2);
+// console.log(22222%2);
+
+
+// var num = 2;
+
+// console.log(num++);
+// console.log(num++);
+// console.log(num++);
+// console.log(num++);
+// console.log(num++);
+// console.log(num++);
+// console.log(num++);
+// console.log(num++);
+// console.log(num++);
+// console.log(num++);
+// console.log(num++);
+// console.log(num++);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+// console.log(num--);
+
+
+
+// var someOne = 10;
+// var otherSomeOne  = -someOne;
+// console.log(otherSomeOne);
+
+
+// var sum = 0;
+// var numberOne = 80;
+// var numberTwo = 100;
+
+// console.log(sum+= numberOne);
+// console.log(sum);
+// console.log(sum+= numberTwo);
+// console.log(sum-=numberOne);
+// console.log(sum*=numberTwo);
+// console.log(); */
+
+// /* TEST */
+
+// //Use Compound Assignment Operators to solve the above problem
+
+// /* function mathTest() {
+//     //please do not delete this
+//     var sum = 0;
+    
+//     var lemons = 250;
+//     var limes = 36;
+    
+//     var lemonade = lemons + limes;
+    
+//     sum += lemonade;
+    
+//     //please do not delete this
+//     return sum;
+// }
+
+// console.log(mathTest());
+//  */
+
+
+// /*ORDERS OF OPERATIONS 
+// PEDMAS PEMDAS 
+
+// Please Excuse My Dear Sally
+
+// Parenthesis 
+// Exponents
+// Multiplication
+// Division
+// Addition
+// Sustraction
+
+// */
+
+
+// // my name is //
+
+
+// // if(edad !== edaDos) {
+// //     console.log("no son iguales");
+// // } else if(edad === edaDos) {
+// //     console.log("somos hermanos")
+
+// // }
+
+// // var edad = 10;
+// // var edaDos = "12";
+
+// // // if (edad >= 25) {
+// // //     console.log('Old enough to rent a car');
+// // // }
+
+
+// // if (edad <= 10) {
+// //     console.log('You can eat from the kids menu');
 // // }
 
 
-// if (edad <= 10) {
-//     console.log('You can eat from the kids menu');
-// }
-
-
-// Create a conditional that returns true, using the starting code below.
+// // Create a conditional that returns true, using the starting code below.
 
 
 
 
-// answer = false;
+// // answer = false;
 
-// if (answer !== true) {
-//     console.log(answer = true);
-// }
-
-
-// console.log(answer);
-
-// // logic operators 
-
-// var one = true;
-// var two = true;
-
-// if (one && two) {
-//     console.log('Ampersand its working');
-// } else {
-//     console.log('No ampersand its not working');
-// }
-
-// var ageJuan = 30;
+// // if (answer !== true) {
+// //     console.log(answer = true);
+// // }
 
 
+// // console.log(answer);
 
-// if(ageJuan <= 28) {
-//     console.log('Juan is over');
+// // // logic operators 
 
-// var age = 30;
+// // var one = true;
+// // var two = true;
 
-// if(age >= 31) {
-//     console.log('You can eat from the kids menu');
-// } else {
-//     console.log('Adult menu time for you!');
-// }
+// // if (one && two) {
+// //     console.log('Ampersand its working');
+// // } else {
+// //     console.log('No ampersand its not working');
+// // }
+
+// // var ageJuan = 30;
 
 
-// Write a condition that returns true if you have more than 50 watermelons.
 
-// function watermelonParty() {
+// // if(ageJuan <= 28) {
+// //     console.log('Juan is over');
+
+// // var age = 30;
+
+// // if(age >= 31) {
+// //     console.log('You can eat from the kids menu');
+// // } else {
+// //     console.log('Adult menu time for you!');
+// // }
+
+
+// // Write a condition that returns true if you have more than 50 watermelons.
+
+// // function watermelonParty() {
     
-//     watermelons = 50;
+// //     watermelons = 50;
     
-//     if (watermelons >= 50) {
-//         return true;
-//     } else {
-//         return false;
+// //     if (watermelons >= 50) {
+// //         return true;
+// //     } else {
+// //         return false;
+// //     }
+// // }
+
+// // console.log(watermelonParty());
+
+
+
+// // function watermelonParty() {
+    
+// //     watermelons = ;
+    
+// //     if (watermelons > 50) {
+// //         return true;
+// //     } else {
+// //         return false;
+// //     }
+// // }
+
+// // console.log(watermelonParty());
+
+// // var damianAge = 34;
+
+// // if(damianAge <= 10) {
+// //     console.log("You can eat from the kid's menu");
+// //     console.log("You are not old enough to drive");
+// //     console.log("You are not old enough to rent a car");
+// // } else if (damianAge > 16 && damianAge < 25){
+// //     console.log("You can not eat from the kid's menu");
+// //     console.log("You are not old enough to drive");
+// //     console.log("You are not old enough to rent a car");
+// // } else if (damianAge >= 25){
+// //     console.log("You can not eat from the kid's menu");
+// //     console.log("You are old enough to drive");
+// //     console.log("You are old enough to rent a car");
+// // }
+
+
+// // Create a condition that allows a 15 year old to get a permit, but can't get a license.
+
+
+// function kid() {
+//     age = 15;
+//     if (age < 15) {
+//         console.log("You are not old to get a permit");
+//         console.log("You are not old to get a license");
 //     }
+//     else if(age >= 15 && age <= 18) {
+//         console.log("You are old to get a permit");
+//         console.log("You are not old to get a license");
+//     } else if (age >= 18) {
+//         console.log("You are old to get a permit");
+//         console.log("You are old to get a license");
+//     } 
+// };
+
+// kid();
+
+
+// // swicth case
+
+// var dataPoint = 24;
+
+// switch (typeof dataPoint) {
+//     case 'string': 
+//         console.log('It is an string');
+//         break;
+
+//     case 'number': 
+//         console.log('It is an number');
+//         break;
+
+//     case 'boolean': 
+//         console.log('It is an boolean');
+//         break;
+//         default: 
+//         console.log('no matches');
 // }
-
-// console.log(watermelonParty());
-
-
-
-// function watermelonParty() {
-    
-//     watermelons = ;
-    
-//     if (watermelons > 50) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-
-// console.log(watermelonParty());
-
-// var damianAge = 34;
-
-// if(damianAge <= 10) {
-//     console.log("You can eat from the kid's menu");
-//     console.log("You are not old enough to drive");
-//     console.log("You are not old enough to rent a car");
-// } else if (damianAge > 16 && damianAge < 25){
-//     console.log("You can not eat from the kid's menu");
-//     console.log("You are not old enough to drive");
-//     console.log("You are not old enough to rent a car");
-// } else if (damianAge >= 25){
-//     console.log("You can not eat from the kid's menu");
-//     console.log("You are old enough to drive");
-//     console.log("You are old enough to rent a car");
-// }
-
-
-// Create a condition that allows a 15 year old to get a permit, but can't get a license.
-
-
-function kid() {
-    age = 15;
-    if (age < 15) {
-        console.log("You are not old to get a permit");
-        console.log("You are not old to get a license");
-    }
-    else if(age >= 15 && age <= 18) {
-        console.log("You are old to get a permit");
-        console.log("You are not old to get a license");
-    } else if (age >= 18) {
-        console.log("You are old to get a permit");
-        console.log("You are old to get a license");
-    } 
-};
-
-kid();
-
-
-// swicth case
-
-var dataPoint = 24;
-
-switch (typeof dataPoint) {
-    case 'string': 
-        console.log('It is an string');
-        break;
-
-    case 'number': 
-        console.log('It is an number');
-        break;
-
-    case 'boolean': 
-        console.log('It is an boolean');
-        break;
-        default: 
-        console.log('no matches');
-}
 
 
 
@@ -421,28 +421,28 @@ switch (typeof dataPoint) {
 
 // console.log(switchStatement());
 
-function ageVerification(age, pay, entry) {
+// function ageVerification(age, pay, entry) {
     // if(age > 25) {
     //     console.log('can rent a car');
     // } else {
     //     console.log('is not enough old enough yet');
     // }
 
-    let answer = age > 25 ? 'cant rent a car' : "can't rent a car";
-    console.log(answer);
+//     let answer = age > 25 ? 'cant rent a car' : "can't rent a car";
+//     console.log(answer);
 
-    let creditCard = pay >= 10 ? 'you can pay with credit card' : 'Only cash';
-    console.log(creditCard);
+//     let creditCard = pay >= 10 ? 'you can pay with credit card' : 'Only cash';
+//     console.log(creditCard);
 
-    let entryCollege = entry < 8 ? 'Welcome you can acces' : 'You were late is close';
-    console.log(entryCollege);
+//     let entryCollege = entry < 8 ? 'Welcome you can acces' : 'You were late is close';
+//     console.log(entryCollege);
 
-}
+// }
 
-console.log(ageVerification(26,5,8));
+// console.log(ageVerification(26,5,8));
 
 
-function adminControls (user) {
+// function adminControls (user) {
     // if(user){
     //     if(user.admin) {
     //         console.log ('Showing admin controls .....');
@@ -453,37 +453,88 @@ function adminControls (user) {
     //         console.log('You need to be logged in');
     // }
 
-    let response = user ? user.admin ? 'Showing admin controls' : 'You need to admin': 'You need to be a logged';
-    console.log(response);
+//     let response = user ? user.admin ? 'Showing admin controls' : 'You need to admin': 'You need to be a logged';
+//     console.log(response);
+// }
+
+// let userOne = {
+//     name: 'Salvador',
+//     admin: false
+// }
+
+// let userTwo = {
+//     name: 'Massimo',
+//     admin: true
+// }
+
+// let userThree = null;
+// console.log(adminControls(userTwo));
+
+
+// let ageDrink = 16;
+
+// function permision (ageDrink) {
+
+//     // if(ageDrink >= 21) {
+//     //     console.log("Drink Juice");
+//     //     } else {
+//     //    console.log("Drink Beer");
+//     // }
+
+//     let answer = ageDrink > 19 ? "Drink Juice" : "Drink Beer" ;
+//     console.log(answer);
+// }
+
+
+// console.log(permision(ageDrink));
+
+
+// var age = 30;
+//      if (age <= 10) {
+//      console.log("You can eat from the kid's menu"); 
+//     } else if (age >= 16 && age < 25) { 
+//         console.log("You are old enough to drive"); 
+//     } else if (age >= 25) { console.log("You are old enough to rent a car"); 
+// }
+
+
+// var dataPoint = {}; 
+
+//     switch (typeof dataPoint) { 
+//     case "string": 
+//     console.log("It's a string");
+//     break; 
+//     case "number": 
+//     console.log("It's a number");
+//     break; 
+//     case "boolean": 
+//     console.log("It's a boolean");
+//     break; default: console.log('No matches'); }
+
+
+    // function greeting () {
+    //     return "Hello DevCamp";
+    // }
+
+    // console.log(greeting());
+
+
+function hiThere() {
+    console.log('Hi there');
 }
 
-let userOne = {
-    name: 'Salvador',
-    admin: false
+console.log(hiThere());
+ 
+
+
+function hiThereTwo () {    
+    return 'Hi there again';
 }
 
-let userTwo = {
-    name: 'Massimo',
-    admin: true
-}
-
-let userThree = null;
-console.log(adminControls(userTwo));
+console.log(hiThereTwo());
 
 
-let ageDrink = 16;
-
-function permision (ageDrink) {
-
-    if(ageDrink >= 21) {
-        console.log("Drink Juice");
-        } else {
-       console.log("Drink Beer");
-    }
-
-    // let answer = ageDrink > 14 ? "Drink Juice" : "Drink Beer" ;
-    // console.log(answer);
-}
-
-
-console.log(permision(ageDrink));
+var storeText = hiThere();
+storeText;
+var storeTextTwo = hiThereTwo();
+storeTextTwo;
