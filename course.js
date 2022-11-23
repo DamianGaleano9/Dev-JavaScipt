@@ -538,3 +538,17 @@ var storeText = hiThere();
 storeText;
 var storeTextTwo = hiThereTwo();
 storeTextTwo;
+
+
+var userObj = {
+    email: 'dj.damian.b@htomail.com',
+    fullName : 'Damian Galeano'
+}
+
+function dasboardGreeting() {
+    console.log('Hi there, '.concat(userObj.fullName))
+}
+
+
+
+dasboardGreeting();
