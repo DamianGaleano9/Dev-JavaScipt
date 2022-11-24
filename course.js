@@ -519,36 +519,78 @@
     // console.log(greeting());
 
 
-function hiThere() {
-    console.log('Hi there');
-}
+// function hiThere() {
+//     console.log('Hi there');
+// }
 
-console.log(hiThere());
+// console.log(hiThere());
  
 
 
-function hiThereTwo () {    
-    return 'Hi there again';
+// function hiThereTwo () {    
+//     return 'Hi there again';
+// }
+
+// console.log(hiThereTwo());
+
+
+// var storeText = hiThere();
+// storeText;
+// var storeTextTwo = hiThereTwo();
+// storeTextTwo;
+
+
+// var userObj = {
+//     email: 'dj.damian.b@htomail.com',
+//     fullName : 'Damian Galeano'
+// }
+
+// function dasboardGreeting() {
+//     var userObj = {
+//         email: 'dj.damian.b@htomail.com',
+//         fullName : 'Salvador Galeano'
+//     }
+
+
+//     console.log('Hi there, '.concat(userObj.fullName))
+// }
+
+
+
+// dasboardGreeting();
+
+
+
+// function greeting () {
+//     return 'heeeey'
+// }
+
+// var greetingTwo = function () {
+//     return 'Heey youuu';
+// };
+
+// console.log(greeting());
+// console.log(greetingTwo());
+
+var myfunction = function () {
+    return true;
 }
 
-console.log(hiThereTwo());
+console.log(myfunction());
 
 
-var storeText = hiThere();
-storeText;
-var storeTextTwo = hiThereTwo();
-storeTextTwo;
+var age = 3;
 
-
-var userObj = {
-    email: 'dj.damian.b@htomail.com',
-    fullName : 'Damian Galeano'
+if(age <= 10) {
+    var buildMenu = function () {
+        return "Kid's menu";
+    }
 }
 
-function dasboardGreeting() {
-    console.log('Hi there, '.concat(userObj.fullName))
+function anotherKidsMenu () {
+    return "Another kid's menu";
 }
 
 
-
-dasboardGreeting();
+console.log(buildMenu());
+console.log(anotherKidsMenu());
