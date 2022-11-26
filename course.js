@@ -572,25 +572,127 @@
 // console.log(greeting());
 // console.log(greetingTwo());
 
-var myfunction = function () {
-    return true;
+// var myfunction = function () {
+//     return true;
+// }
+
+// console.log(myfunction());
+
+
+// var age = 3;
+
+// if(age <= 10) {
+//     var buildMenu = function () {
+//         return "Kid's menu";
+//     }
+// }
+
+// console.log(anotherKidsMenu());
+
+
+// function anotherKidsMenu () {
+//     return "Another kid's menu";
+// }
+
+
+// console.log(buildMenu());
+// console.log(anotherKidsMenu());
+
+
+
+// var greetingNew = function () {
+//     return 'Hi there';
+// }
+
+// console.log(greetingNew());
+
+
+// var age = 4;
+
+
+// if (age <= 10) {
+//     var buildMenu = function () {
+//         return "Kid's menu";
+//     };
+
+//     function wrongMenuBuilder () {
+//         return "Wrong Kid's Menu";  
+//         // Bad Practices
+//     }
+// }
+
+// console.log(buildMenu());
+// console.log(wrongMenuBuilder());
+
+
+// function greetingKids (name,age) {
+//     console.log(`Hy my name is ${name} and I have ${age} years`);
+// }
+
+// greetingKids('Salvador', 4);
+
+// console.log(expressedFunction());   
+
+// const expressedFunction = function () {
+//     console.log("I'm hereee")
+// }
+
+
+// console.log(expressedFunction());   
+
+
+
+// function fullName (firstName, LastName) {
+//     return (`My Fullname is ${firstName} ${LastName}`);
+// }
+
+
+// console.log(fullName("Damian", "Galeano"));
+
+
+function sum (num1, num2) {
+    return num1 + num2;
+};
+
+console.log(sum(2,7));
+
+function fullName(firstName, lastName, lenguage) {
+    var lenguage = lenguage || "Italiano"
+    return lastName.toUpperCase() + ", " + firstName.toUpperCase() + " - " + lenguage;
 }
 
-console.log(myfunction());
+
+console.log(fullName("Damian", "Galeano", "Germany"));
 
 
-var age = 3;
+function sample(arg1, arg2) {
+    console.log(arg1);
+    console.log(arg2);
+}
+console.log(sample());
 
-if(age <= 10) {
-    var buildMenu = function () {
-        return "Kid's menu";
-    }
+
+// REFERENCE VS VALUE  IMPORTANT
+
+var someUser = {
+    name: "Jordan"
 }
 
-function anotherKidsMenu () {
-    return "Another kid's menu";
+function nameFormatter(user) {
+    return user.name = "Oops";
 }
 
+console.log(nameFormatter(someUser));
 
-console.log(buildMenu());
-console.log(anotherKidsMenu());
+someUser;
+
+// DIFFERENCE BETWWEN VALUE WITHOUT EFFECTS SECONDARY 
+var someName = "Tiffany";
+
+function someOtherNameFormatter(name) {
+    return name = "Oops";
+}
+
+console.log(someOtherNameFormatter(someName));
+
+console.log(someName);
