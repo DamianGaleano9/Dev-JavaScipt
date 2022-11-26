@@ -689,10 +689,77 @@ someUser;
 // DIFFERENCE BETWWEN VALUE WITHOUT EFFECTS SECONDARY 
 var someName = "Tiffany";
 
-function someOtherNameFormatter(name) {
-    return name = "Oops";
+function someOtherNameFormatter(someUser) {
+    return someUser.name = "Oops";
 }
 
 console.log(someOtherNameFormatter(someName));
 
 console.log(someName);
+
+console.log(someUser);
+someUser.name = "Kristine";
+someUser;
+console.log(someUser.name);
+console.log(nameFormatter(someUser.name));
+console.log(someUser.name);
+
+var someUser = {
+    name: 'Blank'
+};
+
+function changeName(user) {
+    return  someUser.name = "Jordan"
+}
+
+console.log(changeName(someUser));
+console.log(changeName(someUser));
+
+
+var someUser = "blank"
+
+function changeName(user) {
+    return someUser.name = "Jordan"
+}
+console.log(changeName(someUser));
+
+console.log(someUser);
+
+
+
+
+function battingAverage() {
+    var hits = 100;
+    var atBats = 300;
+
+    return {
+        getCurrentAverage: function () {
+            return(hits/atBats);
+        },
+        updateHitsAndBats: function (hit, atBat) {
+            hits += hit;
+            atBats += atBat;
+        }
+    }
+}
+
+var altuve = battingAverage();
+console.log(altuve.getCurrentAverage());
+
+
+
+
+// function movieTheater(){
+//     var seats = 50;
+//     var seatsSold = 28;
+  
+//     return{
+//       remainingSeats: function(){
+//         return (seats - seatsSold)
+//       }
+//     }
+//   }
+  
+//   var roomOne = movieTheater()
+  
+//   // call the remainingSeats method of the instace of movieTheater
