@@ -728,38 +728,68 @@ console.log(someUser);
 
 
 
-function battingAverage() {
-    var hits = 100;
-    var atBats = 300;
+// function battingAverage() {
+//     var hits = 100;
+//     var atBats = 300;
+
+//     return {
+//         getCurrentAverage: function () {
+//             return(hits/atBats);
+//         },
+//         updateHitsAndBats: function (hit, atBat) {
+//             hits += hit;
+//             atBats += atBat;
+//         }
+//     }
+// }
+
+var altuve = battingAverage();
+
+
+function promedioBateo () {
+    var golpes = 20;
+    var alBate = 50;
 
     return {
-        getCurrentAverage: function () {
-            return(hits/atBats);
+        obtenerPromedioGolpeo: function () {
+            return (golpes/alBate);
         },
-        updateHitsAndBats: function (hit, atBat) {
-            hits += hit;
-            atBats += atBat;
+        actualizarGolpesAlBate : function (golpe, bate) {
+            golpes += golpe;
+            alBate += bate;
         }
     }
 }
 
-var altuve = battingAverage();
-console.log(altuve.getCurrentAverage());
+var damian = promedioBateo();
+console.log(damian);
 
 
 
+// console.log(altuve.getCurrentAverage());
+// console.log(altuve.updateHitsAndBats(2, 50));
+// console.log(altuve.getCurrentAverage());
+// console.log(altuve.getCurrentAverage());
+// console.log(altuve.updateHitsAndBats(0, 0));
+// console.log(altuve.updateHitsAndBats());
+// console.log(altuve.getCurrentAverage());
 
-// function movieTheater(){
-//     var seats = 50;
-//     var seatsSold = 28;
+// battingAverage();
+
+
+
+function movieTheater(){
+    var seats = 50;
+    var seatsSold = 28;
   
-//     return{
-//       remainingSeats: function(){
-//         return (seats - seatsSold)
-//       }
-//     }
-//   }
+    return{
+      remainingSeats: function(){
+        return (seats - seatsSold)
+      }
+    }
+  }
   
-//   var roomOne = movieTheater()
+  var roomOne = movieTheater()
+  console.log(roomOne.remainingSeats());
   
-//   // call the remainingSeats method of the instace of movieTheater
+//   // call the remainingSeats method of the instace of movieTheater   
