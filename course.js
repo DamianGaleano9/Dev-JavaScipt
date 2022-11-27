@@ -650,80 +650,80 @@
 // console.log(fullName("Damian", "Galeano"));
 
 
-function sum (num1, num2) {
-    return num1 + num2;
-};
+// function sum (num1, num2) {
+//     return num1 + num2;
+// };
 
-console.log(sum(2,7));
+// console.log(sum(2,7));
 
-function fullName(firstName, lastName, lenguage) {
-    var lenguage = lenguage || "Italiano"
-    return lastName.toUpperCase() + ", " + firstName.toUpperCase() + " - " + lenguage;
-}
-
-
-console.log(fullName("Damian", "Galeano", "Germany"));
+// function fullName(firstName, lastName, lenguage) {
+//     var lenguage = lenguage || "Italiano"
+//     return lastName.toUpperCase() + ", " + firstName.toUpperCase() + " - " + lenguage;
+// }
 
 
-function sample(arg1, arg2) {
-    console.log(arg1);
-    console.log(arg2);
-}
-console.log(sample());
+// console.log(fullName("Damian", "Galeano", "Germany"));
 
 
-// REFERENCE VS VALUE  IMPORTANT
-
-var someUser = {
-    name: "Jordan"
-}
-
-function nameFormatter(user) {
-    return user.name = "Oops";
-}
-
-console.log(nameFormatter(someUser));
-
-someUser;
-
-// DIFFERENCE BETWWEN VALUE WITHOUT EFFECTS SECONDARY 
-var someName = "Tiffany";
-
-function someOtherNameFormatter(someUser) {
-    return someUser.name = "Oops";
-}
-
-console.log(someOtherNameFormatter(someName));
-
-console.log(someName);
-
-console.log(someUser);
-someUser.name = "Kristine";
-someUser;
-console.log(someUser.name);
-console.log(nameFormatter(someUser.name));
-console.log(someUser.name);
-
-var someUser = {
-    name: 'Blank'
-};
-
-function changeName(user) {
-    return  someUser.name = "Jordan"
-}
-
-console.log(changeName(someUser));
-console.log(changeName(someUser));
+// function sample(arg1, arg2) {
+//     console.log(arg1);
+//     console.log(arg2);
+// }
+// console.log(sample());
 
 
-var someUser = "blank"
+// // REFERENCE VS VALUE  IMPORTANT
 
-function changeName(user) {
-    return someUser.name = "Jordan"
-}
-console.log(changeName(someUser));
+// var someUser = {
+//     name: "Jordan"
+// }
 
-console.log(someUser);
+// function nameFormatter(user) {
+//     return user.name = "Oops";
+// }
+
+// console.log(nameFormatter(someUser));
+
+// someUser;
+
+// // DIFFERENCE BETWWEN VALUE WITHOUT EFFECTS SECONDARY 
+// var someName = "Tiffany";
+
+// function someOtherNameFormatter(someUser) {
+//     return someUser.name = "Oops";
+// }
+
+// console.log(someOtherNameFormatter(someName));
+
+// console.log(someName);
+
+// console.log(someUser);
+// someUser.name = "Kristine";
+// someUser;
+// console.log(someUser.name);
+// console.log(nameFormatter(someUser.name));
+// console.log(someUser.name);
+
+// var someUser = {
+//     name: 'Blank'
+// };
+
+// function changeName(user) {
+//     return  someUser.name = "Jordan"
+// }
+
+// console.log(changeName(someUser));
+// console.log(changeName(someUser));
+
+
+// var someUser = "blank"
+
+// function changeName(user) {
+//     return someUser.name = "Jordan"
+// }
+// console.log(changeName(someUser));
+
+// console.log(someUser);
 
 
 
@@ -743,7 +743,7 @@ console.log(someUser);
 //     }
 // }
 
-var altuve = battingAverage();
+// var altuve = battingAverage();
 
 
 function promedioBateo () {
@@ -762,7 +762,14 @@ function promedioBateo () {
 }
 
 var damian = promedioBateo();
-console.log(damian);
+console.log(damian.obtenerPromedioGolpeo());
+console.log(damian.actualizarGolpesAlBate(0,9));
+console.log(damian.obtenerPromedioGolpeo());
+console.log(damian.actualizarGolpesAlBate(2,10));
+console.log(damian.obtenerPromedioGolpeo());
+
+
+
 
 
 
@@ -778,18 +785,76 @@ console.log(damian);
 
 
 
-function movieTheater(){
-    var seats = 50;
-    var seatsSold = 28;
+// function movieTheater(){
+//     var seats = 50;
+//     var seatsSold = 28;
   
-    return{
-      remainingSeats: function(){
-        return (seats - seatsSold)
-      }
-    }
-  }
+//     return{
+//       remainingSeats: function(){
+//         return (seats - seatsSold)
+//       }
+//     }
+//   }
   
-  var roomOne = movieTheater()
-  console.log(roomOne.remainingSeats());
+//   var roomOne = movieTheater()
+//   console.log(roomOne.remainingSeats());
   
 //   // call the remainingSeats method of the instace of movieTheater   
+
+
+// document.getElementsByClassName("grabThis")[0].innerHTML = "Wizards don't jump they float";
+
+
+// class Person {
+//     constructor(name){
+//       this.name = name;
+//     }
+//   }
+  
+//  const yourPerson = new Person('Damian');
+//  console.log(yourPerson);
+ 
+
+
+
+
+//  var seats = {
+//     seats: 50,
+//     seatsSold: 28,
+//     remainingSeats: function(){
+//       return (this.seats - this.seatsSold)
+//       },
+//     enoughSeats: function(){
+//       if(this.remainingSeats() > 0){
+//         return 
+//       }
+//     }
+//   }
+  
+  
+//   seats.enoughSeats()
+
+
+
+var guide = {
+    title: 'Guide to programming',
+    content: 'Content will go here',
+    visibleToUser: function(viewingUserRole) {
+        if(viewingUserRole === 'paid') {
+            return true;
+        }   else {
+            return false;
+        }
+    },
+    renderContent: function(useRole) {
+        if(this.visibleToUser(useRole)) {
+            console.log(this.title + " - " + this.content);
+        } else {
+            this.content = "";
+            console.log(this.title + " - " + this.content);
+        }
+    }
+}
+
+user = { role: 'free'};
+guide.renderContent(user.role);
