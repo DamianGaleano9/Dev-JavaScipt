@@ -691,7 +691,7 @@
 
 // function someOtherNameFormatter(someUser) {
 //     return someUser.name = "Oops";
-// }
+// 
 
 // console.log(someOtherNameFormatter(someName));
 
@@ -858,3 +858,91 @@ var guide = {
 
 user = { role: 'free'};
 guide.renderContent(user.role);
+
+
+ var seats = {
+    seats: 50,
+    seatsSold: 28,
+    remainingSeats: function(){
+      return (this.seats - this.seatsSold)
+      },
+    enoughSeats: function(){
+      if(this.remainingSeats() > 0){
+        return this.remainingSeats();
+      }
+    }
+  }
+  
+  
+  console.log(seats.enoughSeats());
+
+
+//   ARRAYS
+
+var generatedArray = new Array(9);
+generatedArray;
+console.log(generatedArray.length);
+
+
+var generatedArray = new Array('Massimo', 'Salva', 'Ana', 'Damian');
+generatedArray;
+generatedArray.pop();
+generatedArray;
+generatedArray.push();
+generatedArray.push('Damian');
+generatedArray;
+
+
+
+var literalArray = [1,2,3];
+literalArray;
+var literalArray = ['Juan', 'Pedro', 'Marcos'];
+literalArray;
+
+
+var mixedArray = ['Hi', 1, 3, 9, true, ['a', 'z', 'x', 9], { name: 'Damian', age: 34}, function welcomeToJavaScript ( ) { console.log("function inside")}, false];
+
+
+console.log( mixedArray[6].age);
+console.log( mixedArray[6].name);
+console.log( mixedArray[7]());
+
+
+var myArray = [2, 'one', {name: 'Damian'}];
+
+myArray;
+myArray[2]
+
+
+
+var array = ['Altuve', 'Bregman', 'Correa', 'Springer'];
+
+
+array.splice(3, 1);
+array;
+console.log(array)
+
+array = [["a", "b", "c", "d"], [1, 2, 3, 4, 5,], ["do", "ray", "me", "",]]
+console.log(array[2][4]);
+array[2][4];
+
+
+// Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
+
+// I am a "double quoted" string inside "double quotes".
+
+
+const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+myStr;
+
+
+var players = [
+    'Altuve',
+    'Bregman',
+    'Correa',
+    'Springer'
+];
+
+for(var i = 0; i < players.length; i++) {
+    console.log(players);
+}
