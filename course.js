@@ -872,6 +872,10 @@ guide.renderContent(user.role);
       }
     }
   }
+
+  for(var key in seats) {
+    console.log(key + key[seats]);
+  }
   
   
   console.log(seats.enoughSeats());
@@ -944,5 +948,105 @@ var players = [
 ];
 
 for(var i = 0; i < players.length; i++) {
-    console.log(players);
+    console.log(players[i]);
 }
+
+
+var teams = [
+    'Brasil',
+    'Argentina',
+    "España", 
+    playersSoccers = [
+        'Dami',
+        'Salva'
+    ]
+];
+
+for(var i = 0; i < teams.length; i++) {
+    console.log(teams);
+};
+
+for(team in teams) {
+    console.log(team);
+    console.log(teams[team]);
+};
+
+
+teams.forEach(function(element){
+    console.log(element);
+});
+
+
+// var members = [
+//     'Gold',
+//     'Premium',
+//     'Plate',
+//     'Diamond',
+//     'Silver'
+// ];
+
+// for(var i= 0; i < members.length; i++) {
+//     console.log(members[i]);
+// }
+
+
+
+// var members = [
+//     'Gold',
+//     'Silver',
+//     'Diamond',
+//     'Blue',
+//     'Bronce'
+//     ];
+    
+    
+//     for(var i= 0; i < members.length; i++) {
+//         console.log(members[i]);
+//     };
+
+
+var members = [
+    'Gold',
+    'Silver',
+    'Diamond',
+    'Blue',
+    'Bronce'
+    ];
+    
+    for(var i= 0; i < members.length; i++) {
+        console.log(members[i]);
+    }
+
+
+    var studen = {
+        name: 'Damian',
+        age: 34,
+        city: 'Bilbao'
+    };
+
+    for(var key in studen) {
+        console.log(key + " = " + studen[key]);
+        
+    }
+
+
+var user = {
+    username : 'Damian',
+    email: 'dj.damian.b@hotmail',
+    phone: '555 555 5555'
+};
+
+for(var key in user) {
+    console.log(key + " = " + user[key]);
+}
+
+
+var user = {
+    username : 'Damian',
+    email: 'dj.damian.b@hotmail',
+    phone: '555 555 5555'
+  };
+  
+  for(var key in user) {
+      console.log(key + " => " + user[key]);
+  }
