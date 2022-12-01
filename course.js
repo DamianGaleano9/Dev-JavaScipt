@@ -836,159 +836,173 @@ console.log(damian.obtenerPromedioGolpeo());
 
 
 
-var guide = {
-    title: 'Guide to programming',
-    content: 'Content will go here',
-    visibleToUser: function(viewingUserRole) {
-        if(viewingUserRole === 'paid') {
-            return true;
-        }   else {
-            return false;
-        }
-    },
-    renderContent: function(useRole) {
-        if(this.visibleToUser(useRole)) {
-            console.log(this.title + " - " + this.content);
-        } else {
-            this.content = "";
-            console.log(this.title + " - " + this.content);
-        }
-    }
-}
-
-user = { role: 'free'};
-guide.renderContent(user.role);
-
-
- var seats = {
-    seats: 50,
-    seatsSold: 28,
-    remainingSeats: function(){
-      return (this.seats - this.seatsSold)
-      },
-    enoughSeats: function(){
-      if(this.remainingSeats() > 0){
-        return this.remainingSeats();
-      }
-    }
-  }
-
-  for(var key in seats) {
-    console.log(key + key[seats]);
-  }
-  
-  
-  console.log(seats.enoughSeats());
-
-
-//   ARRAYS
-
-var generatedArray = new Array(9);
-generatedArray;
-console.log(generatedArray.length);
-
-
-var generatedArray = new Array('Massimo', 'Salva', 'Ana', 'Damian');
-generatedArray;
-generatedArray.pop();
-generatedArray;
-generatedArray.push();
-generatedArray.push('Damian');
-generatedArray;
-
-
-
-var literalArray = [1,2,3];
-literalArray;
-var literalArray = ['Juan', 'Pedro', 'Marcos'];
-literalArray;
-
-
-var mixedArray = ['Hi', 1, 3, 9, true, ['a', 'z', 'x', 9], { name: 'Damian', age: 34}, function welcomeToJavaScript ( ) { console.log("function inside")}, false];
-
-
-console.log( mixedArray[6].age);
-console.log( mixedArray[6].name);
-console.log( mixedArray[7]());
-
-
-var myArray = [2, 'one', {name: 'Damian'}];
-
-myArray;
-myArray[2]
-
-
-
-var array = ['Altuve', 'Bregman', 'Correa', 'Springer'];
-
-
-array.splice(3, 1);
-array;
-console.log(array)
-
-array = [["a", "b", "c", "d"], [1, 2, 3, 4, 5,], ["do", "ray", "me", "",]]
-console.log(array[2][4]);
-array[2][4];
-
-
-// Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
-
-// I am a "double quoted" string inside "double quotes".
-
-
-const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
-myStr;
-
-
-var players = [
-    'Altuve',
-    'Bregman',
-    'Correa',
-    'Springer'
-];
-
-for(var i = 0; i < players.length; i++) {
-    console.log(players[i]);
-}
-
-
-var teams = [
-    'Brasil',
-    'Argentina',
-    "España", 
-    playersSoccers = [
-        'Dami',
-        'Salva'
-    ]
-];
-
-for(var i = 0; i < teams.length; i++) {
-    console.log(teams);
-};
-
-for(team in teams) {
-    console.log(team);
-    console.log(teams[team]);
-};
-
-
-teams.forEach(function(element){
-    console.log(element);
-});
-
-
-// var members = [
-//     'Gold',
-//     'Premium',
-//     'Plate',
-//     'Diamond',
-//     'Silver'
-// ];
-
-// for(var i= 0; i < members.length; i++) {
-//     console.log(members[i]);
+// var guide = {
+//     title: 'Guide to programming',
+//     content: 'Content will go here',
+//     visibleToUser: function(viewingUserRole) {
+//         if(viewingUserRole === 'paid') {
+//             return true;
+//         }   else {
+//             return false;
+//         }
+//     },
+//     renderContent: function(useRole) {
+//         if(this.visibleToUser(useRole)) {
+//             console.log(this.title + " - " + this.content);
+//         } else {
+//             this.content = "";
+//             console.log(this.title + " - " + this.content);
+//         }
+//     }
 // }
 
+// user = { role: 'free'};
+// guide.renderContent(user.role);
+
+
+//  var seats = {
+//     seats: 50,
+//     seatsSold: 28,
+//     remainingSeats: function(){
+//       return (this.seats - this.seatsSold)
+//       },
+//     enoughSeats: function(){
+//       if(this.remainingSeats() > 0){
+//         return this.remainingSeats();
+//       }
+//     }
+//   }
+
+//   for(var key in seats) {
+//     console.log(key + key[seats]);
+//   }
+  
+  
+//   console.log(seats.enoughSeats());
+
+
+// //   ARRAYS
+
+// var generatedArray = new Array(9);
+// generatedArray;
+// console.log(generatedArray.length);
+
+
+// var generatedArray = new Array('Massimo', 'Salva', 'Ana', 'Damian');
+// generatedArray;
+// generatedArray.pop();
+// generatedArray;
+// generatedArray.push();
+// generatedArray.push('Damian');
+// generatedArray;
+
+
+
+// var literalArray = [1,2,3];
+// literalArray;
+// var literalArray = ['Juan', 'Pedro', 'Marcos'];
+// literalArray;
+
+
+// var mixedArray = ['Hi', 1, 3, 9, true, ['a', 'z', 'x', 9], { name: 'Damian', age: 34}, function welcomeToJavaScript ( ) { console.log("function inside")}, false];
+
+
+// console.log( mixedArray[6].age);
+// console.log( mixedArray[6].name);
+// console.log( mixedArray[7]());
+
+
+// var myArray = [2, 'one', {name: 'Damian'}];
+
+// myArray;
+// myArray[2]
+
+
+
+// var array = ['Altuve', 'Bregman', 'Correa', 'Springer'];
+
+
+// array.splice(3, 1);
+// array;
+// console.log(array)
+
+// array = [["a", "b", "c", "d"], [1, 2, 3, 4, 5,], ["do", "ray", "me", "",]]
+// console.log(array[2][4]);
+// array[2][4];
+
+
+// // Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
+
+// // I am a "double quoted" string inside "double quotes".
+
+
+// const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+// myStr;
+
+
+// var players = [
+//     'Altuve',
+//     'Bregman',
+//     'Correa',
+//     'Springer'
+// ];
+
+// for(var i = 0; i < players.length; i++) {
+//     console.log(players[i]);
+// }
+
+
+// var teams = [
+//     'Brasil',
+//     'Argentina',
+//     "España", 
+//     playersSoccers = [
+//         'Dami',
+//         'Salva'
+//     ]
+// ];
+
+// for(var i = 0; i < teams.length; i++) {
+//     console.log(teams);
+// };
+
+// for(team in teams) {
+//     console.log(team);
+//     console.log(teams[team]);
+// };
+
+
+// teams.forEach(function(element){
+//     console.log(element);
+// });
+
+
+// // var members = [
+// //     'Gold',
+// //     'Premium',
+// //     'Plate',
+// //     'Diamond',
+// //     'Silver'
+// // ];
+
+// // for(var i= 0; i < members.length; i++) {
+// //     console.log(members[i]);
+// // }
+
+
+
+// // var members = [
+// //     'Gold',
+// //     'Silver',
+// //     'Diamond',
+// //     'Blue',
+// //     'Bronce'
+// //     ];
+    
+    
+// //     for(var i= 0; i < members.length; i++) {
+// //         console.log(members[i]);
+// //     };
 
 
 // var members = [
@@ -999,123 +1013,144 @@ teams.forEach(function(element){
 //     'Bronce'
 //     ];
     
-    
 //     for(var i= 0; i < members.length; i++) {
 //         console.log(members[i]);
+//     }
+
+
+//     var studen = {
+//         name: 'Damian',
+//         age: 34,
+//         city: 'Bilbao'
 //     };
 
+//     for(var key in studen) {
+//         console.log(key + " = " + studen[key]);
+        
+//     }
 
-var members = [
-    'Gold',
-    'Silver',
-    'Diamond',
-    'Blue',
-    'Bronce'
-    ];
+
+// var user = {
+//     username : 'Damian',
+//     email: 'dj.damian.b@hotmail',
+//     phone: '555 555 5555'
+// };
+
+// for(var key in user) {
+//     console.log(key + " = " + user[key]);
+// }
+
+
+// var user = {
+//     username : 'Damian',
+//     email: 'dj.damian.b@hotmail',
+//     phone: '555 555 5555'
+//   };
+  
+//   for(var key in user) {
+//       console.log(key + " => " + user[key]);
+//   } 
+
+
+//   function mostrarSaludo() {
+//     var mensaje = "Este codigo se ejecuta en una funcion";
+
+//   }
+
+// console.log(mostrarSaludo(mensaje));
+// mostrarSaludo(mensaje);
+
+
+
+// var members = [
+//     'Gold',
+//     'Silver',
+//     'Diamond',
+//     'Blue',
+//     'Bronce'
+//     ];
+
+
+//     var i = 0;
+
+//     while(i < members.length) {
+//         console.log(members[i]);
+//         i++;
+//     }
+
+//     var players = [
+//         'Altuve',
+//         'Bregman',
+//         'Correa',
+//         'Springer'
+//     ];
+
+
+//     var i = 0;
+//     while(i < players.length) {
+//         console.log(players[i]);
+//         i++;
+//     }
+
+
+// console.log(players);
+
+
+// var i = 0;
+
+// do {
+//     console.log(players[i]);
+//     i++;
+// } while (i < players.length);
+
+
+// //Please leave the below starter code but fill in the array with 4 elements
+// var dogHouse = [
+//     'isis',
+//     'silvestre',
+//     'txutxi',
+//     'Santa'
+//     ];
     
-    for(var i= 0; i < members.length; i++) {
-        console.log(members[i]);
-    }
+//     var data = 0;
+//     while(i < dogHouse.length) {
+//         console.log(dogHouse[data]);
+//         i++;
+//     }
 
 
-    var studen = {
-        name: 'Damian',
-        age: 34,
-        city: 'Bilbao'
-    };
+//     var players = [ 'Altuve', 'Bregman', 'Correa', 'Springer' ];
 
-    for (var in student) { console.log(key + " => " + student[key]); }
+//     for (player in players) { console.log(players[player]); }
 
 
-var user = {
-    username : 'Damian',
-    email: 'dj.damian.b@hotmail',
-    phone: '555 555 5555'
-};
 
-for(var key in user) {
-    console.log(key + " = " + user[key]);
+
+var estaciones = ["invierno", "otoño", "primavera"];
+estaciones.push("summer");
+
+console.log(estaciones);
+estaciones.pop();
+estaciones;
+estaciones.shift();
+estaciones;
+estaciones.unshift();
+
+
+document.getElementById("dem");
+
+{/* <p>Call a function to convert to celsius from farenheit</p> */}
+
+function toCelsius(f) {
+    return (5/9) * (f-32);
 }
 
 
-var user = {
-    username : 'Damian',
-    email: 'dj.damian.b@hotmail',
-    phone: '555 555 5555'
-  };
-  
-  for(var key in user) {
-      console.log(key + " => " + user[key]);
-  } 
+console.log(toCelsius(20));
+console.log(toCelsius(10));
+console.log(toCelsius(23));
+console.log(toCelsius(99));
+console.log(toCelsius(34));
 
+console.log(toCelsius);
 
-  function mostrarSaludo() {
-    var mensaje = "Este codigo se ejecuta en una funcion";
-
-  }
-
-console.log(mostrarSaludo(mensaje));
-mostrarSaludo(mensaje);
-
-
-
-var members = [
-    'Gold',
-    'Silver',
-    'Diamond',
-    'Blue',
-    'Bronce'
-    ];
-
-
-    var i = 0;
-
-    while(i < members.length) {
-        console.log(members[i]);
-        i++;
-    }
-
-    var players = [
-        'Altuve',
-        'Bregman',
-        'Correa',
-        'Springer'
-    ];
-
-
-    var i = 0;
-    while(i < players.length) {
-        console.log(players[i]);
-        i++;
-    }
-
-
-console.log(players);
-
-
-var i = 0;
-
-do {
-    console.log(players[i]);
-    i++;
-} while (i < players.length);
-
-
-//Please leave the below starter code but fill in the array with 4 elements
-var dogHouse = [
-    'isis',
-    'silvestre',
-    'txutxi',
-    'Santa'
-    ];
-    
-    var data = 0;
-    while(i < dogHouse.length) {
-        console.log(dogHouse[data]);
-        i++;
-    }
-
-
-    var players = [ 'Altuve', 'Bregman', 'Correa', 'Springer' ];
-
-    for (player in players) { console.log(players[player]); }

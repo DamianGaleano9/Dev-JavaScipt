@@ -1,0 +1,8 @@
+button {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(21, 130, 226);
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
