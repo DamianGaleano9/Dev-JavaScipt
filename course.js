@@ -1024,10 +1024,7 @@ var members = [
         city: 'Bilbao'
     };
 
-    for(var key in studen) {
-        console.log(key + " = " + studen[key]);
-        
-    }
+    for (var in student) { console.log(key + " => " + student[key]); }
 
 
 var user = {
@@ -1049,4 +1046,76 @@ var user = {
   
   for(var key in user) {
       console.log(key + " => " + user[key]);
+  } 
+
+
+  function mostrarSaludo() {
+    var mensaje = "Este codigo se ejecuta en una funcion";
+
   }
+
+console.log(mostrarSaludo(mensaje));
+mostrarSaludo(mensaje);
+
+
+
+var members = [
+    'Gold',
+    'Silver',
+    'Diamond',
+    'Blue',
+    'Bronce'
+    ];
+
+
+    var i = 0;
+
+    while(i < members.length) {
+        console.log(members[i]);
+        i++;
+    }
+
+    var players = [
+        'Altuve',
+        'Bregman',
+        'Correa',
+        'Springer'
+    ];
+
+
+    var i = 0;
+    while(i < players.length) {
+        console.log(players[i]);
+        i++;
+    }
+
+
+console.log(players);
+
+
+var i = 0;
+
+do {
+    console.log(players[i]);
+    i++;
+} while (i < players.length);
+
+
+//Please leave the below starter code but fill in the array with 4 elements
+var dogHouse = [
+    'isis',
+    'silvestre',
+    'txutxi',
+    'Santa'
+    ];
+    
+    var data = 0;
+    while(i < dogHouse.length) {
+        console.log(dogHouse[data]);
+        i++;
+    }
+
+
+    var players = [ 'Altuve', 'Bregman', 'Correa', 'Springer' ];
+
+    for (player in players) { console.log(players[player]); }
