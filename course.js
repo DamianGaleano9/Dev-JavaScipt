@@ -746,27 +746,27 @@
 // var altuve = battingAverage();
 
 
-function promedioBateo () {
-    var golpes = 20;
-    var alBate = 50;
+// function promedioBateo () {
+//     var golpes = 20;
+//     var alBate = 50;
 
-    return {
-        obtenerPromedioGolpeo: function () {
-            return (golpes/alBate);
-        },
-        actualizarGolpesAlBate : function (golpe, bate) {
-            golpes += golpe;
-            alBate += bate;
-        }
-    }
-}
+//     return {
+//         obtenerPromedioGolpeo: function () {
+//             return (golpes/alBate);
+//         },
+//         actualizarGolpesAlBate : function (golpe, bate) {
+//             golpes += golpe;
+//             alBate += bate;
+//         }
+//     }
+// }
 
-var damian = promedioBateo();
-console.log(damian.obtenerPromedioGolpeo());
-console.log(damian.actualizarGolpesAlBate(0,9));
-console.log(damian.obtenerPromedioGolpeo());
-console.log(damian.actualizarGolpesAlBate(2,10));
-console.log(damian.obtenerPromedioGolpeo());
+// var damian = promedioBateo();
+// console.log(damian.obtenerPromedioGolpeo());
+// console.log(damian.actualizarGolpesAlBate(0,9));
+// console.log(damian.obtenerPromedioGolpeo());
+// console.log(damian.actualizarGolpesAlBate(2,10));
+// console.log(damian.obtenerPromedioGolpeo());
 
 
 
@@ -1126,31 +1126,38 @@ console.log(damian.obtenerPromedioGolpeo());
 
 
 
-var estaciones = ["invierno", "otoño", "primavera"];
-estaciones.push("summer");
+// var estaciones = ["invierno", "otoño", "primavera"];
+// estaciones.push("summer");
 
-console.log(estaciones);
-estaciones.pop();
-estaciones;
-estaciones.shift();
-estaciones;
-estaciones.unshift();
+// console.log(estaciones);
+// estaciones.pop();
+// estaciones;
+// estaciones.shift();
+// estaciones;
+// estaciones.unshift();
 
 
-document.getElementById("dem");
+// document.getElementById("dem");
 
-{/* <p>Call a function to convert to celsius from farenheit</p> */}
 
-function toCelsius(f) {
+var temperature = function toCelsius(f) {
     return (5/9) * (f-32);
 }
 
 
-console.log(toCelsius(20));
-console.log(toCelsius(10));
-console.log(toCelsius(23));
-console.log(toCelsius(99));
-console.log(toCelsius(34));
+console.log(temperature(120));
 
-console.log(toCelsius);
+console.log("the temperature now in Celsius is " + temperature(120))
 
+const person = {
+    firstName : "Damian",
+    LastName : "Galeano",
+    id : 9999,
+    fullName : function () {
+        return this.firstName + " " + this.LastName;
+    }
+
+};
+
+
+console.log(fullName);
