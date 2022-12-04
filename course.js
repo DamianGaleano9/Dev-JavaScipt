@@ -1305,20 +1305,148 @@ CODIGO | RESULT
 
 */
 
-console.log("Im learnig:\n \"JavaScript\"");
+// console.log("Im learnig:\n \"JavaScript\"");
 
 
-var verbo = "coding";
+// var verbo = "coding";
 
-var concat = "I'm Learning " + verbo ;
+// var concat = "I'm Learning " + verbo ;
 
-console.log(concat)
-
-
-var  mensajeCompleto = concat + " " + "whith DevCamp";
-
-console.log(mensajeCompleto);
-
-console.log(mensajeCompleto.length);
+// console.log(concat)
 
 
+// var  mensajeCompleto = concat + " " + "whith DevCamp";
+
+// console.log(mensajeCompleto);
+
+// console.log(mensajeCompleto.length);
+
+
+// // NOTACION DE CADENA
+
+// var lenguajeDeProgramacion  = "JavaScipt";
+
+// /*  cadena: J a v a S c r i p t;
+//     indice: 0 1 2 3 4 5 6 7 8 9;
+
+// */
+
+// console.log(lenguajeDeProgramacion[2]);
+
+
+// // INMUTABILIDAD 
+
+// var miNuevoString = "jello World" ;
+
+// miNuevoString[0] = H;
+
+// miNuevoString = "Hello World";
+// cosole.log(miNuevoString);
+
+
+
+/*El ultimo indice siempre es la longitud -1 porque comenzamos desde
+0*/
+
+// var miNuevaCadena =  "damian";
+
+// var n = 6;
+
+
+// cadena: J a v a S c r i p t;
+//     indice: 0 1 2 3 4 5 6 7 8 9;
+// console.log(miNuevaCadena[miNuevaCadena.length -n]);
+// console.log(miNuevaCadena[miNuevaCadena.length -3]);
+
+// var miSustantivo = "perro";
+// var miAdjetivo = "negro";
+// var miVerbo = "corrio";
+// var miAdverbio = "lentamente";
+
+// /*Concatena las cadenas para crear una cadena que muestre un mensaje 
+// puedes cambiar los valores de las variables.
+
+// */
+
+// var palabrasEnBlanco = "mi" + " " + miSustantivo + " "  + miAdjetivo + " " + miVerbo + " " + miAdverbio;
+// var palabrasEnBlanco = "la bicicleta " + " " + miVerbo + " a casa";
+
+// console.log(palabrasEnBlanco);
+
+
+// ARRAYS / ARREGLOS 
+
+// var miArreglo = ["Damian", 34];
+// console.log(miArreglo);
+
+// var notas = [34, 23, 34, 35]
+
+
+// const estudiante = {
+//     firstName: "Damian",
+//     lastName: "Galeano",
+//     age: 34,
+//     city: "Bilbao",
+//     fullName : function () {
+//         return this.firstName + " " + this.lastName + " " + this.age + " "+ "Years old";
+//     }
+
+// }
+ 
+
+// console.log(estudiante.fullName());
+
+
+// var listaDeEstudiantes = [["Damian", 100], ["Salvador", 97]];
+
+// console.log(listaDeEstudiantes[0, 0]);
+
+// var listaDeProductos = [["camisa", 5.67, "S134"], ["Phone", 250, "S345"], ["zapatos", 36.7, "S998"]];
+
+// console.log(listaDeProductos[0]);
+// console.log(listaDeProductos[1]);
+// console.log(listaDeProductos[2]);
+// console.log(listaDeProductos[0][0]);
+// console.log(listaDeProductos[0][1]);
+// console.log(listaDeProductos[0][2]);
+// console.log(listaDeProductos[1][0]);
+// console.log(listaDeProductos[1][1]);
+// console.log(listaDeProductos[1][2]);
+// console.log(listaDeProductos[2][0]);
+// console.log(listaDeProductos[2][1]);
+// console.log(listaDeProductos[2][2]);
+
+var listaDeProductos = [["camisa", 5.67, "S134"], ["Phone", 250, "S345"], ["zapatos", 36.7, "S998"]];
+
+var articuloEntregado = "una" + " " +  listaDeProductos[0][0]+ " " + "con un precio de " + listaDeProductos[0][1] + " " + "numero de referencia " + listaDeProductos[0][2];
+var articuloEntregado2 = "un" + " " +  listaDeProductos[1][0]+ " " + "con un precio de " + listaDeProductos[1][1] + " " + "numero de referencia " + listaDeProductos[1][2];
+var articuloEntregado3 = "unos" + " " +  listaDeProductos[2][0]+ " " + "con un precio de " + listaDeProductos[2][1] + " " + "numero de referencia " + listaDeProductos[2][2];
+
+// console.log(articuloEntregado);
+// console.log(articuloEntregado2);
+// console.log(articuloEntregado3);
+
+listaDeProductos[0][0] = "Jeans";
+listaDeProductos;
+console.log(articuloEntregado)
+
+console.log(listaDeProductos.push(["Calcetines", 399, "S344"]));
+console.log(listaDeProductos);
+
+var articuloEntregado4 = "unos" + " " +  listaDeProductos[3][0]+ " " + "con un precio de " + listaDeProductos[3][1] + " " + "numero de referencia " + listaDeProductos[3][2];
+
+
+console.log(articuloEntregado4);
+
+listaDeProductos[1][0] = "Laptop";
+console.log(listaDeProductos.toString());
+console.log(listaDeProductos.join(" * "));
+
+console.log(listaDeProductos.shift());
+listaDeProductos;
+
+
+listaDeClientes = [["Juan", 33], ["Diana", 22], ["Massimo", 2]];
+
+const unionDeMatrices = listaDeProductos.concat(listaDeClientes);
+console.log(unionDeMatrices);
