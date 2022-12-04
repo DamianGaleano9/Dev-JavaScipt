@@ -1145,19 +1145,125 @@ var temperature = function toCelsius(f) {
 }
 
 
-console.log(temperature(120));
+// console.log(temperature(120));
 
-console.log("the temperature now in Celsius is " + temperature(120))
+// console.log("the temperature now in Celsius is " + temperature(120))
 
-const person = {
-    firstName : "Damian",
-    LastName : "Galeano",
-    id : 9999,
-    fullName : function () {
-        return this.firstName + " " + this.LastName;
-    }
+// const person = {
+//     firstName : "Damian",
+//     LastName : "Galeano",
+//     id : 9999,
+//     fullName : function () {
+//         return this.firstName + " " + this.LastName;
+//     }
 
-};
+// };
 
 
-console.log(fullName);
+// console.log(fullName());
+
+
+
+// var string  = "This is mi first string";
+
+// console.log(string.charAt(2));
+
+// var a = 10;
+
+// a = 20;
+// console.log(a);
+
+// var b = a;
+// console.log(b);
+
+
+// var idioma = "Español";
+// console.log(idioma.length);
+
+// // VARIABLE NO INICIALIZADA 
+
+// var z;
+// console.log(z);
+
+// var miVariable = 5;
+// console.log(MiVariable);
+
+// // case-Sensitive
+// console.log(miVariable);
+
+// var resto = 15 % 5;
+// console.log(resto);
+// resto = 5 % 2;
+// console.log(resto);
+
+// INCREMENTAR VALOR DE UNA VARIABLE 
+
+// var librosComprados = 105;
+
+// console.log(librosComprados); /*INICIALMENTE*/
+
+
+// // OPCION 1
+
+// librosComprados = librosComprados + 1;
+
+
+// console.log(librosComprados);
+
+// // OPCION 2
+
+// librosComprados++;
+// console.log(librosComprados);
+
+
+
+// // DISMINUIR EL VALOR DE UNA VARIABLE;
+
+// var numeroDeEstudiantes = 256;
+// console.log(numeroDeEstudiantes)
+
+// numeroDeEstudiantes = numeroDeEstudiantes -1;
+// console.log(numeroDeEstudiantes);
+
+// numeroDeEstudiantes--;
+// numeroDeEstudiantes;
+
+// var a = 23;
+// // a = a + 5;
+// a += 5;
+// console.log(a);
+
+// var salva = 4;
+
+// salva += 9;
+// console.log(salva);
+
+
+// salva -= 9;
+// console.log(salva);
+
+
+
+// var totalVentas = 1399283883.99;
+
+// console.log(totalVentas);
+
+// totalVentas *= 2;
+// console.log(totalVentas);
+
+
+    var c = 48;
+
+    c -= 11;
+    console.log(c);
+
+
+    var salario = 45000;
+
+
+    salario += 2000;
+
+    console.log(salario);
+
+    
+
