@@ -1140,9 +1140,9 @@
 // document.getElementById("dem");
 
 
-var temperature = function toCelsius(f) {
-    return (5/9) * (f-32);
-}
+// var temperature = function toCelsius(f) {
+//     return (5/9) * (f-32);
+// }
 
 
 // console.log(temperature(120));
@@ -1252,18 +1252,73 @@ var temperature = function toCelsius(f) {
 // console.log(totalVentas);
 
 
-    var c = 48;
+    // var c = 48;
 
-    c -= 11;
-    console.log(c);
-
-
-    var salario = 45000;
+    // c -= 11;
+    // console.log(c);
 
 
-    salario += 2000;
+    // var salario = 45000;
 
-    console.log(salario);
 
-    
+    // salario += 2000;
+
+    // console.log(salario);
+
+    // salario /= 2;
+    // console.log(salario);
+
+
+
+// STRINGS 
+
+// var name = "Damian";
+
+// var name = "Salva";
+
+// console.log(name);
+
+// var miCadena = "Soy una cadena de caracteres con 'comillas'";
+// console.log(miCadena);
+
+
+// var miMeta;
+
+// miMeta = "Aprender a programar en \"Devcamp\"";
+
+// console.log(miMeta);
+
+// ESCAPE SEQUENCES 
+
+
+/* 
+
+CODIGO | RESULT
+
+\' COMILLA SIMPLE
+\ " COMILLA DOBLE
+\\ BARRA INVERTIDA
+\n LINEA NUEVA
+\t TABULACION
+\f SALTO DE PAGINA
+\B RETROCESO
+
+*/
+
+console.log("Im learnig:\n \"JavaScript\"");
+
+
+var verbo = "coding";
+
+var concat = "I'm Learning " + verbo ;
+
+console.log(concat)
+
+
+var  mensajeCompleto = concat + " " + "whith DevCamp";
+
+console.log(mensajeCompleto);
+
+console.log(mensajeCompleto.length);
+
 
