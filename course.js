@@ -1416,37 +1416,116 @@ CODIGO | RESULT
 // console.log(listaDeProductos[2][1]);
 // console.log(listaDeProductos[2][2]);
 
-var listaDeProductos = [["camisa", 5.67, "S134"], ["Phone", 250, "S345"], ["zapatos", 36.7, "S998"]];
+// var listaDeProductos = [["camisa", 5.67, "S134"], ["Phone", 250, "S345"], ["zapatos", 36.7, "S998"]];
 
-var articuloEntregado = "una" + " " +  listaDeProductos[0][0]+ " " + "con un precio de " + listaDeProductos[0][1] + " " + "numero de referencia " + listaDeProductos[0][2];
-var articuloEntregado2 = "un" + " " +  listaDeProductos[1][0]+ " " + "con un precio de " + listaDeProductos[1][1] + " " + "numero de referencia " + listaDeProductos[1][2];
-var articuloEntregado3 = "unos" + " " +  listaDeProductos[2][0]+ " " + "con un precio de " + listaDeProductos[2][1] + " " + "numero de referencia " + listaDeProductos[2][2];
+// var articuloEntregado = "una" + " " +  listaDeProductos[0][0]+ " " + "con un precio de " + listaDeProductos[0][1] + " " + "numero de referencia " + listaDeProductos[0][2];
+// var articuloEntregado2 = "un" + " " +  listaDeProductos[1][0]+ " " + "con un precio de " + listaDeProductos[1][1] + " " + "numero de referencia " + listaDeProductos[1][2];
+// var articuloEntregado3 = "unos" + " " +  listaDeProductos[2][0]+ " " + "con un precio de " + listaDeProductos[2][1] + " " + "numero de referencia " + listaDeProductos[2][2];
 
-// console.log(articuloEntregado);
-// console.log(articuloEntregado2);
-// console.log(articuloEntregado3);
+// // console.log(articuloEntregado);
+// // console.log(articuloEntregado2);
+// // console.log(articuloEntregado3);
 
-listaDeProductos[0][0] = "Jeans";
-listaDeProductos;
-console.log(articuloEntregado)
+// listaDeProductos[0][0] = "Jeans";
+// listaDeProductos;
+// console.log(articuloEntregado)
 
-console.log(listaDeProductos.push(["Calcetines", 399, "S344"]));
-console.log(listaDeProductos);
+// console.log(listaDeProductos.push(["Calcetines", 399, "S344"]));
+// console.log(listaDeProductos);
 
-var articuloEntregado4 = "unos" + " " +  listaDeProductos[3][0]+ " " + "con un precio de " + listaDeProductos[3][1] + " " + "numero de referencia " + listaDeProductos[3][2];
-
-
-console.log(articuloEntregado4);
-
-listaDeProductos[1][0] = "Laptop";
-console.log(listaDeProductos.toString());
-console.log(listaDeProductos.join(" * "));
-
-console.log(listaDeProductos.shift());
-listaDeProductos;
+// var articuloEntregado4 = "unos" + " " +  listaDeProductos[3][0]+ " " + "con un precio de " + listaDeProductos[3][1] + " " + "numero de referencia " + listaDeProductos[3][2];
 
 
-listaDeClientes = [["Juan", 33], ["Diana", 22], ["Massimo", 2]];
+// console.log(articuloEntregado4);
 
-const unionDeMatrices = listaDeProductos.concat(listaDeClientes);
-console.log(unionDeMatrices);
+// listaDeProductos[1][0] = "Laptop";
+// console.log(listaDeProductos.toString());
+// console.log(listaDeProductos.join(" * "));
+
+// console.log(listaDeProductos.shift());
+// listaDeProductos;
+
+
+// listaDeClientes = [["Juan", 33], ["Diana", 22], ["Massimo", 2]];
+
+// const unionDeMatrices = listaDeProductos.concat(listaDeClientes);
+// console.log(unionDeMatrices);
+
+
+
+// function clasificarValor (valor) {
+//     var respuesta;
+//     switch(valor) {
+//         case 1: 
+//         respuesta = "Alpha";
+//         break;
+//         case 2 :
+//         respuesta = "Betha";
+//         break;
+//         case 3: 
+//         respuesta = "Gamma";
+//         break;
+//         case 4: 
+//         respuesta = "Damian";
+//     }
+//     return respuesta;
+// }
+
+
+// console.log(clasificarValor(1));
+// console.log(clasificarValor(2));
+// console.log(clasificarValor(3));
+// console.log(clasificarValor(4));
+
+
+// var producto = "Fries";
+
+// switch (producto) {
+//     case "pizza": 
+//     console.log("This product have a coast to 3.75");
+//     break;
+//     case "Hamburgesa":
+//     console.log("Doble cheese cost 2.45");
+//     break;
+//     case "Fries":
+//     console.log("Half prices fries");
+//     break;
+
+
+    // function seleccionarIdioma (valor) {
+    //     var idioma;
+    //     switch (valor) {
+    //         case 1: 
+    //         idioma = "Español";
+    //         break;
+    //         case 2: 
+    //         idioma = "Frances";
+    //         break;
+    //         case 3:
+    //         idioma = "Italiano"
+    //         break;
+    //         default :
+    //         idioma = "Ingles";
+    //         break;
+    //     }
+    //     return idioma;
+    // }
+
+    // console.log(seleccionarIdioma(8));
+
+
+    // function interPretIMC (bodyMassIndex) {
+    //     if(bodyMassIndex < 18.5) {
+    //         console.log("Under Weight");
+    //     } else if (bodyMassIndex <= 24.9) {
+    //         console.log("Normal");
+    //     } else if (bodyMassIndex <= 29.9) {
+    //         console.log("Overweight");
+    //     } else {
+    //         console.log("Obese");
+    //     }
+    // }
+
+    // console.log(interPretIMC(24));
+
+    
