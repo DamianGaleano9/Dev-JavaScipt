@@ -1550,5 +1550,281 @@ CODIGO | RESULT
 
 // console.log(clasificarVolumen(6));
 
+// TRANSFORMACION DE UNA SENTENCIA IF A UN SWITCH
+
+// function seleccionarIdiomaNew(valor) {
+// //     var idioma;
+
+// //     if(valor == 1) {
+// //         idioma = "Español";
+// //     }   else if (valor == 2) {
+// //         idioma = "Frances";
+// //     }   else if(valor == 3) {
+// //         idioma = "Italiano";
+// //     }   else {
+// //         idioma = "Ingles";
+// //     }
+// //     return idioma;
+// // }
+
+//     var idioma;
+//     switch(valor) {
+//         case 1: 
+//             idioma = "Español";
+//             break;
+//         case 2: 
+//             idioma = "Frances";
+//             break;
+//         case 3: 
+//             idioma = "Italiano";
+//             break;
+//         default:
+//             idioma = "Ingles";
+//             break;
+//     }
+//     return idioma;
+// }
+
+// console.log(seleccionarIdiomaNew(2));
 
 
+// function esMenorQue (a, b) {
+
+//     return a < b;
+
+
+
+    // if(a < b) {
+    //     return true;
+    // }   else {
+    //     return false;
+    // }
+// }
+
+// console.log(esMenorQue(2, 9));  
+
+
+// PATRON DE RETORNO ANTICIPADO
+
+
+// function miFunction () {
+//     console.log("Hola");
+//     return "Mundo";
+//     console.log("Adios");  /* DESPUES DE UN RETURN LA FUNCION SE DETIENE */
+// }
+
+
+// console.log(miFunction());
+
+
+// LA IMPORTANCIA DE LA SENTENCIA RETURN DENTRO DE LA FUNCION DETENDRIA TODO DE SER NEGATIVO Y LA FUNCION TENDRIA UN UNRECHEABLE PARA NUNCA LLEGAR A CALCULAR
+
+// function calculateSquareRoot(num) {
+//     if(num < 0) {
+//         return undefined;
+//     } 
+//     return Math.sqrt(num);
+// }
+
+
+// console.log(calculateSquareRoot(16));
+
+
+
+// // COUNTING CARDS
+
+// // PRIMERO DEFINIR UNA VARIABLE GLOBAL;
+
+// var conteo = 0;
+
+// function contarCartas(carta) {
+//     var decision;
+
+//     switch(carta) {
+//         case 2:
+//         case 3:
+//         case 4: 
+//         case 5:
+//         case 6:
+//         conteo++;
+//         break;
+
+//         // case 7:  AQUI EL CONTADOR QUEDARA IGUAL POR LO TANTO ESPERAR 
+//         // case 8: 
+//         // case 9: 
+
+//         case 10:
+//         case "J":
+//         case "Q":
+//         case "K":
+//         case "A":
+//         conteo--;
+//         break;
+//     }
+
+//     if(conteo > 0) {
+//         decision = "Apostar";
+//     }   else {
+//         decision = "Esperar";
+//     }
+
+//     return conteo + " " + decision;
+// }
+
+// console.log(contarCartas(9));
+
+// CREATING OBJECTS
+
+// var miPerro = {
+//     "nombre": "Isis",
+//     "edad": 4,
+//     "peso": 7,
+//     "nombre completo": "Isis maria de jesus"
+// }
+
+// console.log(miPerro.nombre)
+// console.log(miPerro.edad)
+// console.log(miPerro["nombre completo"])
+//  /* CUANDO EL NOMBRE LLEVA ESPACIO ES NECESARIO LA NOTACION DE CORCHETES*/
+// console.log(miPerro.nombre)
+
+// // EN ESTE NO ES NECESARIO PONER LAS COMILLAS YA QUE JS CONVIERTE TODO A STRINGS
+
+// // PUEDO ACCEDER MEDIANTE NOTACION DE PUNTOS O NOTACION DE CORCHETES
+
+// console.log(miPerro["nombre"]);
+// console.log(miPerro["edad"]);
+// console.log(miPerro["peso"]);
+// // console.log(miPerro["nombre completo"]);
+
+// var miCuaderno = {
+//     "color": "Verde",
+//     "categoria": 3,
+//     "numero de paginas": 200,
+//     "numeroDeHojas": 100
+// };
+
+// console.log(miCuaderno.color)
+// console.log(miCuaderno["color"]);
+// console.log(miCuaderno["numero de paginas"]);
+// console.log(miCuaderno.numeroDeHojas);
+
+
+
+// ACCEDER A LA PROPIEDAD DE UN OBJETO MEDIANTE UNA VARIABLE
+
+// var resultados = {
+//     1: "Damian",
+//     2: "Salvador",
+//     3: "Massimo",
+//     4: "Ana"
+// }
+
+// var posicion = 1;
+
+// console.log(resultados[posicion]);
+// ESTO  ME PERMITE ACCEDER DINAMICAMENTE A LA PROPIEDAD EN CASO DE ACTUALIZAR EL VALOR 
+// ESTO SOLO ES POSIBLE CON CORCHETES CON LA PROPIEDAS PUNTO NO ES POSIBLE ACCEDER A UNA VARIABLE;
+
+
+// var mochila = {
+//     "color": "azul",
+//     "tamaño": "mediano",
+//     "contenido": ["botella de agua", "Cuaderno"]
+// };
+
+// console.log(mochila.color);
+// mochila.color = "negro";
+// console.log(mochila.color);
+// mochila.contenido.push("Lapiz");
+
+// console.log(mochila.contenido);
+
+// mochila["color"] = "red";
+// console.log(mochila["color"]);
+
+// mochila.instruments = "scissors";
+// console.log(mochila)
+// mochila["documents"] = "papers";
+// console.log(mochila);
+
+// delete mochila.instruments;
+// console.log(mochila);
+
+// function buscarElementoQuimico(simbolo) {
+    // var elementoQuimico = "";
+
+    // CREACION DE UN OBJETO APARTIR DE UN SWITCH ASOCIANDO ELEMENTOS PARA UN CODIGO MAS DINAMICO;
+
+    // var simbolosQuimicos = {
+    //     "Al": "Aluminio",
+    //     "S": "Azufre",
+    //     "Cl": "Cloro",
+    //     "He": "Helio",
+    //     "Br": "Boro",
+    //     "Li": "Litio"
+    // }
+
+    // switch(simbolo) {
+    //     case "Al":
+    //     elementoQuimico = "Aluminio";
+    //     break;
+    //     case "S": 
+    //     elementoQuimico = "Azufre";
+    //     break;
+    //     case "Cl":
+    //     elementoQuimico = "Cloro" ;
+    //     break;
+    //     case "He":
+    //     elementoQuimico = "Helio";
+    //     break;
+    //     case "Br": 
+    //     elementoQuimico = "Boro";
+    //     break;
+    //     case "Li": 
+    //     elementoQuimico = "Litio";
+    //     break;
+    // }
+
+//     return simbolosQuimicos[simbolo];
+// }
+
+// console.log(buscarElementoQuimico("Al"));
+// console.log(buscarElementoQuimico("S"));
+// console.log(buscarElementoQuimico("Cl"));
+// console.log(buscarElementoQuimico("He"));
+// console.log(buscarElementoQuimico("Br"));
+// console.log(buscarElementoQuimico("Li"));
+
+
+var miCuaderno = {
+    "color": "green",
+    price: 2.35,
+    year: 2009
+};
+
+// console.log(miCuaderno.hasOwnProperty("color"));
+// console.log(miCuaderno.hasOwnProperty("price"));
+// console.log(miCuaderno.hasOwnProperty("year"));
+
+
+
+// VERIFICACION DE PROPIEDADES HASOWNPROPERTY
+
+function verificarPropiedad(obj, propiedad) {
+    if(obj.hasOwnProperty(propiedad)) {
+        return "Propiedad: " + obj[propiedad];
+    }   else {
+        return "El objeto no tiene esta propiedad.";
+    }
+}
+
+var miCuaderno = {
+    "color": "Verde",
+    price: 2.35,
+    year: 2009
+};
+
+
+console.log(verificarPropiedad(miCuaderno, "color"));
+console.log(verificarPropiedad(miCuaderno, "cost"));
