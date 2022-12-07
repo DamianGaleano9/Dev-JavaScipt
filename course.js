@@ -1811,20 +1811,81 @@ var miCuaderno = {
 
 // VERIFICACION DE PROPIEDADES HASOWNPROPERTY
 
-function verificarPropiedad(obj, propiedad) {
-    if(obj.hasOwnProperty(propiedad)) {
-        return "Propiedad: " + obj[propiedad];
-    }   else {
-        return "El objeto no tiene esta propiedad.";
-    }
+// function verificarPropiedad(obj, propiedad) {
+//     if(obj.hasOwnProperty(propiedad)) {
+//         return "Propiedad: " + obj[propiedad];
+//     }   else {
+//         return "El objeto no tiene esta propiedad.";
+//     }
+// }
+
+// var miCuaderno = {
+//     "color": "Verde",
+//     price: 2.35,
+//     year: 2009
+// };
+
+
+// console.log(verificarPropiedad(miCuaderno, "color"));
+// console.log(verificarPropiedad(miCuaderno, "cost"));
+
+
+// var ordenesDePizza = [
+//     {
+//         "tipo": "margarita",
+//         "tamaño": "individual",
+//         "precio": 5.67,
+//         "toppings": [
+//             "extra queso",
+//             "champiñones",
+//             "piña"
+//         ],
+//         "para llevar": true
+//     },
+//     {
+//         "tipo": "cuatro quesos",
+//         "tamaño": "familiar",
+//         "precio": 18.34,
+//         "toppings": [
+//             "extra queso",
+//             "pimenton"
+//         ],
+//         "para llevar": false
+//     },
+//     {
+//         "tipo": "napolitana",
+//         "tamaño": "individual",
+//         "precio": 6.78,
+//         "toppings": [],
+//         "paraLLevar": true
+//     }
+    
+// ];
+
+
+
+// console.log(ordenesDePizza[0]);
+// console.log(ordenesDePizza[1]);
+// console.log(ordenesDePizza[2]);
+// console.log(ordenesDePizza[0].tipo);
+// console.log(ordenesDePizza[0]["tipo"]);
+// console.log(ordenesDePizza[1].toppings);
+// console.log(ordenesDePizza[2].toppings.push(["tocino", "parmesano"]));
+// console.log(ordenesDePizza[2].toppings);
+
+
+// var generatedArray = new Array(3);
+// console.log(generatedArray.push("Damian"));
+// console.log(generatedArray);
+
+
+
+
+
+// $('.gsfi').value = "Javascript course";
+
+
+var miReceta = {
+    "descripcion": "mi postre favorito",
+    "costo":
 }
-
-var miCuaderno = {
-    "color": "Verde",
-    price: 2.35,
-    year: 2009
-};
-
-
-console.log(verificarPropiedad(miCuaderno, "color"));
-console.log(verificarPropiedad(miCuaderno, "cost"));
