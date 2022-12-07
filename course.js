@@ -1936,4 +1936,102 @@ CODIGO | RESULT
 
 // COLECCION DE DISCOS
 
+// var coleccionDeDiscos = {
 
+//     7853: {
+//         tituloDelAlbum: "Bee Gees Greatest",
+//         artista: "Bee Gee",
+//         canciones: ["Stayin 'Alive"]
+//     },
+//     5439: {
+//                 tituloDelAlbum: "ABBA Gold"
+//             }
+// }
+
+// function actualizarDiscos(discos, id, propiedad, valor)  {
+//     if(valor === "") {
+//       delete  discos[id][propiedad];
+//     } else if(propiedad === "canciones") {
+//         discos[id][propiedad] = discos[id][propiedad] || [];
+//         discos[id][propiedad].push(valor);
+//     } else {
+//         discos[id][propiedad] = valor;
+//     }
+// }
+
+
+// // console.log(coleccionDeDiscos[7853].tituloDelAlbum);
+
+
+
+// // console.log(actualizarDiscos(coleccionDeDiscos, 7853, "tituloDelAlbum", ""));
+// // // LLAMAMOS LA FUNCION UNA VEZ SE BUSCA EL ID Y SE VA A LA PROPIEDAD TITULO Y SE ELIMINA 
+
+// // console.log(coleccionDeDiscos[7853].tituloDelAlbum);
+
+
+// // AHORA ACTUALIZAMOS AL SEGUNDO ID Y LLAMAMOS "CANCIONES" COMO NO TIENE VA A GENER UNA 
+
+// console.log(coleccionDeDiscos[5439].tituloDelAlbum)
+
+// console.log(actualizarDiscos(coleccionDeDiscos, [5439], "canciones", "I keep falling for you"));
+
+// console.log(coleccionDeDiscos[5439].canciones);
+
+
+// CICLO WHILE 
+
+// var i = 0;
+
+// while(i <= 10) {
+//     console.log("Hello World");
+//     i++;
+// }
+
+// var miArreglo = [];
+
+// var i = 0;
+
+// console.log(miArreglo);
+
+// while(i <= 9 ){
+//     miArreglo.push(i);
+//     console.log(miArreglo.length);
+//     i++;
+// }
+
+// console.log(miArreglo);
+
+
+// !IMPORTANT EL CICLO WHILE NO INICIALIZABA POR QUE LA VARIABLE I NO ESTA DEFINIDA
+
+
+// var numeros = [1,2,3,4,5,6,99];
+
+// while(numeros.length > 6) {
+//     numeros.pop();
+// }
+
+// console.log(numeros);
+
+
+// CICLO FOR = LO USAMOS CUANDO SABEMOS EL NUMERO DE ITERACCIONES QUE DEBEMOS HACER SE ACTUALIZA SOLO
+
+var numbers = [];
+
+for (var i= 0; i <= 9; i+= 2) {  /*IIMPORTANT ESTA LINEA TIENE TODO INICIA LA VAR VERIFICA HASTA DONDE ES VERDADERA Y LUEGO COMO DEBERIA INCREMENTAR*/
+    numbers.push(i);
+}
+
+console.log(numbers);
+
+var miArregloNew = [];
+
+
+// CREANDO UN IMPAR
+
+for(var i= 1; i < 20;  i+= 2) {
+    miArregloNew.push(i);
+}
+
+console.log(miArregloNew);
