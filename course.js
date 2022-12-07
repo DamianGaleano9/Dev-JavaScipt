@@ -1797,11 +1797,11 @@ CODIGO | RESULT
 // console.log(buscarElementoQuimico("Li"));
 
 
-var miCuaderno = {
-    "color": "green",
-    price: 2.35,
-    year: 2009
-};
+// var miCuaderno = {
+//     "color": "green",
+//     price: 2.35,
+//     year: 2009
+// };
 
 // console.log(miCuaderno.hasOwnProperty("color"));
 // console.log(miCuaderno.hasOwnProperty("price"));
@@ -1885,7 +1885,55 @@ var miCuaderno = {
 // $('.gsfi').value = "Javascript course";
 
 
-var miReceta = {
-    "descripcion": "mi postre favorito",
-    "costo":
-}
+// var miReceta = {
+//     "descripcion": "mi postre favorito",
+//     "costo": 15.6,
+//     "ingredientes": {
+//         "masa": {
+//             "harina": "100 grs",
+//             "sal": "1 cucharada",
+//             "agua": "1 taza"
+//         },
+//         "cobertura": {
+//             "azucar": "120 grs",
+//             "chocolate": "4 cucharadas",
+//             "mantequilla": "200 grs"
+//         }
+//     }   
+// };
+
+
+// console.log(miReceta.ingredientes.masa.harina);
+// console.log(miReceta.ingredientes.cobertura.azucar);
+// miReceta.ingredientes.cobertura.mantequilla = "900 grs";
+// console.log(miReceta.ingredientes.cobertura.mantequilla);
+
+// NESTED ARRAY
+
+// var misPlantas = [
+//     {
+//         tipo: "floress",
+//         lista: [
+//             "rosas",
+//             "tulipanes",
+//             "dientes de leon"
+//         ]
+//     },
+//     {
+//         tipo: "arboles",
+//         lista: [
+//             "abeto",
+//             "pino",
+//             "abedul"
+//         ]
+//     }
+// ];
+
+// console.log(misPlantas[0].lista[0]);
+// console.log(misPlantas[1].lista[2]);
+// console.log(misPlantas[0]["lista"][2]);
+
+
+// COLECCION DE DISCOS
+
+
