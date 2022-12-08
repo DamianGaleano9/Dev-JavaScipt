@@ -2089,20 +2089,94 @@ CODIGO | RESULT
 
 // console.log(contarNumerosPares([2, 4, 6, 8]));
 
-var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+// var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
-for(var i= 0; i < myArray.length; i++) {
-    console.log(">Nueva Iteracion:");
-// ELEMENTO DE LA MATRIX NORMAL
-    var arrayAnidado = myArray[i];
-    console.log("Array: " + arrayAnidado);
+// for(var i= 0; i < myArray.length; i++) {
+//     console.log(">Nueva Iteracion:");
+// // ELEMENTO DE LA MATRIX NORMAL
+//     var arrayAnidado = myArray[i];
+//     console.log("Array: " + arrayAnidado);
 
-// AHORA USAMOS UNA VARIABLE DISTINTA PARA ENTRAR AL ARRAY NESTED
-    for(var j = 0; j < arrayAnidado.length; j++) {
-        console.log(">Nested loop" + arrayAnidado[j]);
-        console.log("Elemento:")
-        console.log( + (arrayAnidado[j]));
+// // AHORA USAMOS UNA VARIABLE DISTINTA PARA ENTRAR AL ARRAY NESTED
+//     for(var j = 0; j < arrayAnidado.length; j++) {
+//         console.log(">Nested loop" + arrayAnidado[j]);
+//         console.log("Elemento:")
+//         console.log( + (arrayAnidado[j]));
+//     }
+// }
+
+
+// for - loops through a block of code a number of times
+// for/in - loops through the properties of an object
+// for/of - loops through the values of an iterable object
+// while - loops through a block of code while a specified condition is true
+// do/while - also loops through a block of code while a specified condition is true
+
+// DO WHILE 
+
+// var x;
+// x = 5;
+
+// while(x < 10) {
+//     console.log(x)
+//     x++;
+// };
+
+// A DIFERENCIA DEL CICLO WHILE QUE LA CONDICION NECESITA SER VERDADERA PARA COMENZAR EL CICLO
+// EN EL CICLO DO WHILE SE EJECUTA AL MENOS UNA VEZ SIN NECESIDAD DE SER VERDADERA
+
+// var y;
+// y = 2;
+
+
+// do{
+//     console.log(y);
+//     y++;
+// } while(y < 10);
+
+// en JavaScript se suele usar para indentar de 2 a 4 Espacios y que tenga Consistencia !important
+
+// PROFILE SEARCH
+
+var contactos = [
+    {
+        "nombre": "Nora",
+        "apellido": "Nav",
+        "numero": "9293030",
+        "gustos": ["Pizza", "Programacion"]
+    },
+    {
+        "nombre": "Harry",
+        "apellido": "Potter",
+        "numero": "2020034",
+        "gustos": ["Hogwarts", "Magia"]
+    },
+    {
+        "nombre": "Sherlock",
+        "apellido": "Holmes",
+        "numero": "90019200",
+        "gustos": ["Casos interesantes", "Violin"]
     }
+];
+
+function buscarPerfil(nombre, propiedad) {
+    for (var i = 0; i < contactos.length; i++) {
+        if (contactos[i].nombre === nombre) { /* si accediendo al nombre es exactamente el nombre que buscamos retorne la propiedad*/
+            return contactos[i][propiedad] || "La propiedad no Existe."; /* aqui si llamaramos con notacion de corchetes no accederia al parametro*/
+        } 
+    }
+    return "El contacto no esta en la lista";
 }
+
+
+console.log(contactos);
+console.log(buscarPerfil("Harry", "numero"));
+console.log(buscarPerfil("Nora", "gustos"));
+console.log(buscarPerfil("Sherlock", "gustos"));
+console.log(buscarPerfil("Sherlock", "gustos"));
+console.log(buscarPerfil("Sherlock", "gustos"));
+console.log(buscarPerfil("Sherlock", "gustos"));
+
+console.log(buscarPerfil("Damian", "numero"));
 
 
