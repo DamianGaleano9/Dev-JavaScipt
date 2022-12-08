@@ -2017,21 +2017,92 @@ CODIGO | RESULT
 
 // CICLO FOR = LO USAMOS CUANDO SABEMOS EL NUMERO DE ITERACCIONES QUE DEBEMOS HACER SE ACTUALIZA SOLO
 
-var numbers = [];
+// var numbers = [];
 
-for (var i= 0; i <= 9; i+= 2) {  /*IIMPORTANT ESTA LINEA TIENE TODO INICIA LA VAR VERIFICA HASTA DONDE ES VERDADERA Y LUEGO COMO DEBERIA INCREMENTAR*/
-    numbers.push(i);
+// for (var i= 0; i <= 9; i+= 2) {  /*IIMPORTANT ESTA LINEA TIENE TODO INICIA LA VAR VERIFICA HASTA DONDE ES VERDADERA Y LUEGO COMO DEBERIA INCREMENTAR*/
+//     numbers.push(i);
+// }
+
+// console.log(numbers);
+
+// var miArregloNew = [];
+
+
+// // CREANDO UN IMPAR
+
+// for(var i= 1; i < 20;  i+= 2) {
+//     miArregloNew.push(i);
+// }
+
+// console.log(miArregloNew);
+
+
+// // CREATE ODD TILL 26
+
+// var twentySix = [];
+
+
+// for(var i= 0; i <= 26; i+= 2) {
+//     twentySix.push(i);
+// }
+
+// console.log(twentySix);
+
+// // COUNT BACKWARDS 
+// var backwards = [];
+// for(var i =10; i > 0; i-= 2) {
+//     backwards.push(i);
+// }
+
+// console.log(backwards);
+
+
+
+// iterate a object whit a for loop
+
+// var myArray = [2, 4, 6,8];
+// var total = 0;
+
+// for(var i= 0; i < myArray.length; i++) {
+//     console.log("iteration " + i);
+//     console.log(myArray[i]);
+//     total += myArray[i];
+// }
+
+// console.log(myArray);
+
+// var lenguajes = ["JavaScript", "Phyton", "C++", "Java"];
+
+// for(var i= 0; i < lenguajes.length; i++) {
+//     console.log(lenguajes[i].toLocaleUpperCase());
+// }
+
+// function contarNumerosPares(arreglo) {
+//     var total= 0;
+//     for(var i = 0; i < arreglo.length; i++) {
+//         if(arreglo[i] % 2 == 0) {
+//             total++;
+//         }
+//     }
+//     return total;
+// }   
+
+// console.log(contarNumerosPares([2, 4, 6, 8]));
+
+var miArray = [[1, 2, 4], [2, 6, 9], [8, 4, 2]];
+
+for(var i= 0; i < myArray.length; i++) {
+    console.log("Nueva Iteracion:");
+
+    var arrayAnidado = miArray[i];
+    console.log("Array: " + arrayAnidado);
+
+
+    for(var j = 0; j < arrayAnidado.length; j++) {
+        console.log(">>>>Nested loop");
+        console.log("Elemnto")
+        console.log(arrayAnidado[j]);
+    }
 }
 
-console.log(numbers);
 
-var miArregloNew = [];
-
-
-// CREANDO UN IMPAR
-
-for(var i= 1; i < 20;  i+= 2) {
-    miArregloNew.push(i);
-}
-
-console.log(miArregloNew);
