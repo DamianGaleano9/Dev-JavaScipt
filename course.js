@@ -2138,45 +2138,94 @@ CODIGO | RESULT
 
 // PROFILE SEARCH
 
-var contactos = [
-    {
-        "nombre": "Nora",
-        "apellido": "Nav",
-        "numero": "9293030",
-        "gustos": ["Pizza", "Programacion"]
-    },
-    {
-        "nombre": "Harry",
-        "apellido": "Potter",
-        "numero": "2020034",
-        "gustos": ["Hogwarts", "Magia"]
-    },
-    {
-        "nombre": "Sherlock",
-        "apellido": "Holmes",
-        "numero": "90019200",
-        "gustos": ["Casos interesantes", "Violin"]
-    }
-];
+// var contactos = [
+//     {
+//         "nombre": "Nora",
+//         "apellido": "Nav",
+//         "numero": "9293030",
+//         "gustos": ["Pizza", "Programacion"]
+//     },
+//     {
+//         "nombre": "Harry",
+//         "apellido": "Potter",
+//         "numero": "2020034",
+//         "gustos": ["Hogwarts", "Magia"]
+//     },
+//     {
+//         "nombre": "Sherlock",
+//         "apellido": "Holmes",
+//         "numero": "90019200",
+//         "gustos": ["Casos interesantes", "Violin"]
+//     }
+// ];
 
-function buscarPerfil(nombre, propiedad) {
-    for (var i = 0; i < contactos.length; i++) {
-        if (contactos[i].nombre === nombre) { /* si accediendo al nombre es exactamente el nombre que buscamos retorne la propiedad*/
-            return contactos[i][propiedad] || "La propiedad no Existe."; /* aqui si llamaramos con notacion de corchetes no accederia al parametro*/
-        } 
-    }
-    return "El contacto no esta en la lista";
+// function buscarPerfil(nombre, propiedad) {
+//     for (var i = 0; i < contactos.length; i++) {
+//         if (contactos[i].nombre === nombre) { /* si accediendo al nombre es exactamente el nombre que buscamos retorne la propiedad*/
+//             return contactos[i][propiedad] || "La propiedad no Existe."; /* aqui si llamaramos con notacion de corchetes no accederia al parametro*/
+//         } 
+//     }
+//     return "El contacto no esta en la lista";
+// }
+
+
+// console.log(contactos);
+// console.log(buscarPerfil("Harry", "numero"));
+// console.log(buscarPerfil("Nora", "gustos"));
+// console.log(buscarPerfil("Sherlock", "gustos"));
+// console.log(buscarPerfil("Sherlock", "gustos"));
+// console.log(buscarPerfil("Sherlock", "gustos"));
+// console.log(buscarPerfil("Sherlock", "gustos"));
+
+// console.log(buscarPerfil("Damian", "numero"));
+
+
+// RANDOM NUMBER 
+
+// var numeroAleatorio = Math.random();
+// console.log(numeroAleatorio);
+// console.log(numeroAleatorio);
+// console.log(numeroAleatorio);
+// console.log(numeroAleatorio);
+// console.log(numeroAleatorio);
+// console.log(numeroAleatorio);
+// console.log(numeroAleatorio);
+// console.log(numeroAleatorio);
+// console.log(numeroAleatorio);
+// console.log(numeroAleatorio);
+
+// function generarNumeroAleatorio () {
+//      return console.log(Math.random());
+// }
+
+// console.log(generarNumeroAleatorio());
+
+
+// INTEGER NUMBER
+// console.log(Math.random() * 20);
+// var numeroAleatorioEntre0y19 = Math.floor(Math.random() * 20);
+// console.log(numeroAleatorioEntre0y19);
+
+// Math.random nunca va a ser 1 su valor minimo es 0 en cuanto llega a 0.19 el Math.floor convierte el 19 a entero
+
+// function generarEnteroAleatorio(limiteSuperior) {
+//     // Basicamente damos un numero fijo que en este caso seria el limite superior
+//     return Math.floor(Math.random() * 9);
+// };
+
+// //Podemos llamar la funcion en un ciclo FOR y generar cuantos numeros necesitemos;
+
+// for(var i = 0; i <= 9; i++) {
+//     console.log("key" + generarEnteroAleatorio())
+// }
+
+// console.log(generarEnteroAleatorio(8));
+// console.log(generarEnteroAleatorio(2));
+// console.log(generarEnteroAleatorio(4));
+// console.log(generarEnteroAleatorio(5));
+
+function rangoAleatorio(limiteSuperior, limiteInferior) {
+    
 }
-
-
-console.log(contactos);
-console.log(buscarPerfil("Harry", "numero"));
-console.log(buscarPerfil("Nora", "gustos"));
-console.log(buscarPerfil("Sherlock", "gustos"));
-console.log(buscarPerfil("Sherlock", "gustos"));
-console.log(buscarPerfil("Sherlock", "gustos"));
-console.log(buscarPerfil("Sherlock", "gustos"));
-
-console.log(buscarPerfil("Damian", "numero"));
 
 
