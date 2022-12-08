@@ -2089,19 +2089,19 @@ CODIGO | RESULT
 
 // console.log(contarNumerosPares([2, 4, 6, 8]));
 
-var miArray = [[1, 2, 4], [2, 6, 9], [8, 4, 2]];
+var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
 for(var i= 0; i < myArray.length; i++) {
-    console.log("Nueva Iteracion:");
-
-    var arrayAnidado = miArray[i];
+    console.log(">Nueva Iteracion:");
+// ELEMENTO DE LA MATRIX NORMAL
+    var arrayAnidado = myArray[i];
     console.log("Array: " + arrayAnidado);
 
-
+// AHORA USAMOS UNA VARIABLE DISTINTA PARA ENTRAR AL ARRAY NESTED
     for(var j = 0; j < arrayAnidado.length; j++) {
-        console.log(">>>>Nested loop");
-        console.log("Elemnto")
-        console.log(arrayAnidado[j]);
+        console.log(">Nested loop" + arrayAnidado[j]);
+        console.log("Elemento:")
+        console.log( + (arrayAnidado[j]));
     }
 }
 
