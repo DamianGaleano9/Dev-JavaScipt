@@ -100,22 +100,68 @@
 
 // OPERADOR CONDICIONAL O TERNARIO 
 
-function retornarMinimoTernario(x, y) {
-    return x < y ? x : y;
-// se inicia con la condicion si es verdadera evaluara x del primer parametro de lo controrio evaluara y;
+// function retornarMinimoTernario(x, y) {
+//     return x < y ? x : y;
+// // se inicia con la condicion si es verdadera evaluara x del primer parametro de lo controrio evaluara y;
 
-}
+// }
 
-console.log(retornarMinimoTernario(2, 5));
-console.log(retornarMinimoTernario(2, 2));
-console.log(retornarMinimoTernario(90, 999));
-
-
-var a = 5;
-var b = 9;
-
-console.log(a > b ? a + 2 : b * 3);
-// para terminos de sintaxis el operador " : " significa sino ;
+// console.log(retornarMinimoTernario(2, 5));
+// console.log(retornarMinimoTernario(2, 2));
+// console.log(retornarMinimoTernario(90, 999));
 
 
+// var a = 5;
+// var b = 9;
 
+// console.log(a > b ? a + 2 : b * 3);
+// // para terminos de sintaxis el operador " : " significa sino ;
+
+
+// // multiple ternary operators
+
+// function compararNumeros(a, b) {
+//     if(a == b) {
+//         return "a y b son iguales";
+//     }   else if(a > b) {
+//         return "a es mayor que b";
+//     }   else {
+//         return "b es mayor que a"
+//     }
+// }
+
+// // transformacion de una sentencia if a un operador ternario;
+
+// console.log(compararNumeros(5, 1));
+
+// function compararNumerosTernario(x, z) {
+//     return x == z ? "x y z son iguales" 
+//         : x > z ? "x es mayor que z" 
+//         : "z es mayor que x"
+// }
+
+// console.log(compararNumerosTernario(2000, 100000));
+
+
+// THE DIFFERENCE BETWEEN VAR & LET 
+
+// var muchasVeces = "damian";
+// var muchasVeces = "salvador";
+
+// console.log(muchasVeces);
+// // se puede sobre escribir var 
+
+// // let 
+
+
+// let soloUnaVez = "damian";
+// let soloUnaVez = "salvador";
+
+// console.log(soloUnaVez);
+// Error no se puede volver a declarar la variable con ambito de bloque;
+
+
+
+var miVariableGlobal = 4;
+
+console.log(miVariableGlobal);
