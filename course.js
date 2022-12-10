@@ -2555,5 +2555,113 @@ CODIGO | RESULT
 
 
 // Operador Rest 
+// ...Rest convierte todos los parametros en un Array...
+
+// function miFunction(...args) {
+//     console.log(args);
+// } 
 
 
+// console.log(miFunction())
+
+
+// const sumar = (...args) => {
+//     return args.reduce((a, b) => { a + b }, 0);
+// }
+
+// console.log(sumar(2, 6));
+
+// const numeros = [1, 2, 9, 10,200];
+
+// function sumar(x, y, z, q, k, a) {
+//     return x + y + z + q + k;
+// }
+// // Spread
+
+// // Toma los parametros de la functions realiza el return y hace el Spread
+// console.log(sumar(...numeros));
+
+
+// // Destructuring 
+
+// const usuario = {
+//     nombre: "Damian Galeano",
+//     edad: 34
+// };
+
+// Para convertir una propiedad en una variable hariamos
+
+// const nombre = usuario.nombre;
+// const edad = usuario.edad;
+
+
+// WITH DESTRUCTURING;
+
+// const {nombre, edad} = usuario;
+
+// console.log(nombre);
+// console.log(edad);
+// console.log(usuario)
+
+
+// var coordenadas = {
+//     x: 9,
+//     h: 10,
+//     f: 12
+// };
+
+// const {x, h, f} = coordenadas;
+
+// console.log(x);
+// console.log(h);
+// console.log(f);
+
+// Destructuring for nested array
+
+// const usuario = {
+//     DamianGaleano : {
+//         age: 34,
+//         email: "dj.damian.b@hotmail"
+//     }
+// };
+
+// const {DamianGaleano: {age, email}} = usuario;
+//         // ingresamos al obj nested tomamos sus propiedades
+//         // y esto va ser igual al usuario que seria todo el obj
+
+// console.log(age);
+// console.log(email);
+
+
+const familia = {
+    MazoLopera: {
+        papa: {
+            name: "Damian Galeano",
+            age: 34,
+            occupation: "Development"
+        },
+        mama: {
+            name: "Ana",
+            age: 29,
+            occupation: "mama"
+        },
+        hijos: {
+            first: {
+                name: "Salvador",
+                age: 4,
+            },
+            second: {
+                name: "Massimo",
+                age: 1 
+            }
+        }
+    }
+};
+
+
+// const { MazoLopera: { papa: name, age} = familia;
+// console.log(MazoLoper(age));
+
+
+const { MazoLopera : { hijos: { name, age } } } = familia;
+console.log(name)
