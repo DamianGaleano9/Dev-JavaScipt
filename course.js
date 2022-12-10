@@ -2501,3 +2501,59 @@ CODIGO | RESULT
 // colores.negro = "black";
 // console.log(colores);
 // console.log(delete colores.blanco);
+
+
+// FUNCIONES FLECHA ARROW FUNCTIONS
+// const fechaAnonima = function () {
+//     return new Date();
+// };
+
+// console.log(fechaAnonima());
+
+// // TRANSFORM FUNCTIONS TO ARROW FUNCTIONS ;
+
+// const fecha = () => new Date();
+
+
+// const sumarTres = function (x) { 
+//     return x + 3;
+// };
+
+
+// console.log(sumarTres(1));
+
+
+
+// const sumarTresArrow = (x) => x + 3;
+
+// // Transformation to ARROW FUNCTIONS
+
+// console.log(sumarTresArrow(5));
+
+// const concatenar = function (arr1, arr2) {
+//     return arr1.concat(arr2);
+// };
+
+// console.log(concatenar([1, 2, 3]), [4, 5, 6]);
+
+
+// const concatenar2 = (arr1, arr2) => arr1.concat(arr2);
+// console.log(concatenar2([1, 2, 3], [7, 8, 9]));
+
+
+// const sumar = (a, b) => {
+//     let num = 6;
+//     return a + b + num;
+//     // Cuando tenemos mas de de una linea en la function
+//     // Conservamos las llaves;
+// }
+
+// console.log(sumar(2,4));
+
+// const incrementar = (num, valor = 2) => num + valor;
+// console.log(incrementar(5));
+
+
+// Operador Rest 
+
+
