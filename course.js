@@ -2224,8 +2224,280 @@ CODIGO | RESULT
 // console.log(generarEnteroAleatorio(4));
 // console.log(generarEnteroAleatorio(5));
 
-function rangoAleatorio(limiteSuperior, limiteInferior) {
-    
-}
+// function rangoAleatorio(limiteSuperior, limiteInferior) {
+
+// }
+
+// var coleccionDeDiscos = {
+//     7853: {
+//         tituloDelAlbum: "Bee Gees Greatest",
+//         artista: "Bee Gee",
+//         canciones: ["stayin' alive"]
+//     },
+//     5439: {
+//         tituloAlmbun: "ABBA Gold"
+//     }
+// }
+
+// function actualizarDiscos(discos, id, propiedad, valor) {
+//     if(valor === "") {
+//         delete discos[id][propiedad];  
+//     } else if(propiedad === "canciones"){
+//         discos[id][propiedad] = discos[id][propiedad] || [];
+//         discos[id][propiedad].push(valor);
+//     } else {
+//         discos[id][propiedad] = valor;
+//     }
+// }
 
 
+// console.log(coleccionDeDiscos[7853].tituloDelAlbum);
+// // LLAMAMOS AL OBJETO ACCEDEMOS AL PRIMER ID Y VEMOS QUE EL TITULO ES EL QUE CORRESPONDE
+
+// console.log(actualizarDiscos(coleccionDeDiscos, 7853, "tituloDelAlbum", ""));
+
+// // AHORA LLAMAMOS A NUESTRA FUNCION QUE ELIMINA LA PROPIEDAD "tituloDelAlbum"
+
+
+// console.log(coleccionDeDiscos[7853].tituloDelAlbum);
+
+// DEVUELVE UNDEFINED QUE ES LO QUE QUEREMOS 
+
+
+// AHORA ACTUALIZAMOS LOS DATOS PARA EL SEGUNDO ID Y CAMBIAREMOS PARA QUE SI NO EXISTE LA PROPIEDAD 
+// CANCION Y CREE UNA EN EL VALOR QUE PASAMOS;
+
+
+// console.log(coleccionDeDiscos[5439]);
+// console.log(actualizarDiscos(coleccionDeDiscos, [5439], "canciones", "I Keep falling for you"));
+// console.log(coleccionDeDiscos[5439].canciones)
+
+
+
+// function rangoAleatorio(limiteInferior, limiteSuperior) {
+//     return Math.floor(Math.random() * (limiteSuperior -limiteInferior + 1)) + limiteInferior;
+// }
+
+
+// console.log(rangoAleatorio(2, 10));
+// console.log(rangoAleatorio(2, 10));
+// console.log(rangoAleatorio(2, 10));
+// console.log(rangoAleatorio(2, 10));
+// console.log(rangoAleatorio(2, 10));
+
+
+// for(var i = 0; i < 10; i++) {
+//     console.log(rangoAleatorio(2,9))
+// }
+
+
+// // PARSE INT()
+
+// console.log(parseInt("3"));
+// console.log(parseInt("12"));
+// console.log(parseInt("-49"));
+// console.log(parseInt("3.22222220"));
+// console.log(parseInt("9.3333"));
+// console.log(parseInt("0"));
+
+
+// var a = parseInt("5");
+// var b = parseInt("7");
+
+// console.log(a + b);
+
+
+// a = parseInt();
+// b = parseInt(); 
+
+// console.log(a + b);
+// console.log(parseInt("110111", 2))
+// console.log(parseInt("110110", 4))
+// console.log(parseInt(110110, 4))
+
+// console.log(parseInt("3E0A", 16)) /* sistema hexadecimal*/
+
+// function retornarMinimo(x,y){
+//     if(x < y){
+//         return x;
+//     } else {
+//         return y;
+//     }
+// }
+
+// console.log(retornarMinimo(10, 8));
+
+
+// OPERADOR CONDICIONAL O TERNARIO 
+
+// function retornarMinimoTernario(x, y) {
+//     return x < y ? x : y;
+// // se inicia con la condicion si es verdadera evaluara x del primer parametro de lo controrio evaluara y;
+
+// }
+
+// console.log(retornarMinimoTernario(2, 5));
+// console.log(retornarMinimoTernario(2, 2));
+// console.log(retornarMinimoTernario(90, 999));
+
+
+// var a = 5;
+// var b = 9;
+
+// console.log(a > b ? a + 2 : b * 3);
+// // para terminos de sintaxis el operador " : " significa sino ;
+
+
+// // multiple ternary operators
+
+// function compararNumeros(a, b) {
+//     if(a == b) {
+//         return "a y b son iguales";
+//     }   else if(a > b) {
+//         return "a es mayor que b";
+//     }   else {
+//         return "b es mayor que a"
+//     }
+// }
+
+// // transformacion de una sentencia if a un operador ternario;
+
+// console.log(compararNumeros(5, 1));
+
+// function compararNumerosTernario(x, z) {
+//     return x == z ? "x y z son iguales" 
+//         : x > z ? "x es mayor que z" 
+//         : "z es mayor que x"
+// }
+
+// console.log(compararNumerosTernario(2000, 100000));
+
+
+// THE DIFFERENCE BETWEEN VAR & LET 
+
+// var muchasVeces = "damian";
+// var muchasVeces = "salvador";
+
+// console.log(muchasVeces);
+// // se puede sobre escribir var 
+
+// // let 
+
+
+// let soloUnaVez = "damian";
+// let soloUnaVez = "salvador";
+
+// console.log(soloUnaVez);
+// Error no se puede volver a declarar la variable con ambito de bloque;
+
+
+
+// var miVariableGlobal = 4;
+
+// console.log(miVariableGlobal);
+
+
+// function myfunction() {
+//     console.log(miVariableGlobal);
+//     // Esta variable se puede LLamar desde cualquier parte del codigo
+//     var miVariableLocal = 8;
+//     console.log(miVariableLocal);
+//     // Esta variable solo funciona adentro su scope no supera la funcion 
+// }
+
+// console.log(myfunction());
+// console.log(miVariableLocal);/* Error >>>>> */
+
+
+// CUANDO USAMOS LET SU ALCANZE ESTA LIMITADO AL BLOQUE O DONDE SE DEFINE;
+
+// for(var i = 0; i < 3; i++) {
+//     console.log(i);
+// }
+// // Aqui la variable es global y se puede llamar 
+// // aun despues de terminado el ciclo sigue presente en
+// // todo el ambito global del programa.
+// console.log(i);
+
+// // 
+
+// for(let i = 0; i < 3; i++) {
+//     console.log(i);/* Esto lo hace el For*/
+//     // Aqui let es local y solo esta disponible para el bloque
+//     // o el ambito que fue definido
+// }
+
+// console.log(i);/* Error >>>>*/ r
+
+
+// var mostrarColor = true;
+
+// if(mostrarColor) {
+//     let color = "verde";
+//     // var color = "verde";
+
+//     console.log("My Favorite Color " + color);
+//     // Funciona para el condicional
+//     // Afuera no esta definida 
+// }
+
+// console.log(color);
+
+// const miConst = 35;
+// console.log(miConst);
+// miConst = 15; /* Read Only */
+
+// miConst2;
+// miConst2 = 12;
+// console.log(miConst2)
+
+// Las constantes deben ser definidas en una Sola
+// Linea;
+
+// Convencionalmente se escriben ;
+
+// const MY_CONST = 100;
+
+
+
+// function calcularAreaDelCirculo(radio){
+//     const PI = 3.14;
+
+//   if(radio < 0) {
+//     return undefined;
+// } 
+//     return PI * (radio ** 2);
+// }
+
+// console.log(calcularAreaDelCirculo(10));
+
+// MUTABILIDAD 
+
+
+// const MI_ARREGLO = [1,2.,3,4];
+
+// // const MI_ARREGLO = [9.8,6,5]; 
+// // ES INMUTABLE UNA COSTANTE PERO SUS 
+// // SUS PROPIEDAD SE PUEDEN VOLVER HA ASIGNAR 
+
+// MI_ARREGLO[0] = 5;
+// MI_ARREGLO[1] = 6;
+// MI_ARREGLO[2] = 7;
+// MI_ARREGLO[3] = 59;
+
+// console.log(MI_ARREGLO);
+
+
+// INMUTABILIDAD EN UN OBJETO
+
+// let colores = {
+//     "verde": "#10e20",
+//     "negro": "#00000",
+//     "blanco": "#ffff"
+// }
+
+// Object.freeze(colores);
+
+// colores.negro = "black";
+// console.log(colores);
+// console.log(delete colores.blanco);
