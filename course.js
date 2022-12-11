@@ -2633,35 +2633,169 @@ CODIGO | RESULT
 // console.log(email);
 
 
-const familia = {
-    MazoLopera: {
-        papa: {
-            name: "Damian Galeano",
-            age: 34,
-            occupation: "Development"
-        },
-        mama: {
-            name: "Ana",
-            age: 29,
-            occupation: "mama"
-        },
-        hijos: {
-            first: {
-                name: "Salvador",
-                age: 4,
-            },
-            second: {
-                name: "Massimo",
-                age: 1 
-            }
-        }
-    }
+// const familia = {
+//     MazoLopera: {
+//         papa: {
+//             name: "Damian Galeano",
+//             age: 34,
+//             occupation: "Development"
+//         },
+//         mama: {
+//             name: "Ana",
+//             age: 29,
+//             occupation: "mama"
+//         },
+//         hijos: {
+//             first: {
+//                 name: "Salvador",
+//                 age: 4,
+//             },
+//             second: {
+//                 name: "Massimo",
+//                 age: 1 
+//             }
+//         }
+//     }
+// };
+
+
+// // const { MazoLopera: { papa: name, age} = familia;
+// // console.log(MazoLoper(age));
+
+
+// const { MazoLopera : { hijos: { name, age } } } = familia;
+// console.log(familia.MazoLopera.hijos.first.name);
+// console.log(familia.MazoLopera.papa.name);
+// console.log(familia.MazoLopera.hijos.second.name);
+// console.log(familia.MazoLopera.mama.occupation);
+
+// const newOccupation = familia.MazoLopera.mama.occupation;
+// console.log(newOccupation);
+
+
+// const PRONOSTICO_LOCAL = {
+//     yesterday: {
+//         max: 15,
+//         min: 9
+//     },
+//     today: {
+//         max: 25,
+//         min: 19
+//     },
+//     tomorrow: {
+//         max: 2,
+//         min: 9
+//     }
+// };
+
+// const { today: {max, min}} = PRONOSTICO_LOCAL;
+// // I can acces the variable withe the destructuring;
+
+// console.log(max);
+// console.log(min);
+
+// const { tomorrow: {max, min}} = PRONOSTICO_LOCAL;
+// console.log(max, "What is going on with the wheater", min)
+
+// const MaxToday = PRONOSTICO_LOCAL.today.max;
+// console.log(MaxToday);
+
+// const MaxTomorrow = PRONOSTICO_LOCAL.tomorrow.max;
+// console.log(MaxTomorrow);
+
+// const MinYesterday = PRONOSTICO_LOCAL.yesterday.min;
+// console.log(MinYesterday);
+
+// const PRONOSTICO_LOCAL = {
+//     yesterday: {
+//         max: 15,
+//         min: 9
+//     },
+//     today: {
+//         max: 25,
+//         min: 19
+//     },
+//     tomorrow: {
+//         max: 2,
+//         min: 9
+//     }
+// };
+
+
+// // const {yesterday : {max : maxHoy}} = PRONOSTICO_LOCAL;
+// // console.log(maxHoy);
+
+
+// const { tomorrow : { max : maxHoy, min : minHoy }} = PRONOSTICO_LOCAL;
+// console.log(minHoy);
+// console.log(maxHoy);
+
+
+// DESTRUCTURING FOR ARRAYS;
+
+// var a;
+// var b;
+// var c;
+
+// [a, b,,,,,,, c] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 200];
+// // Dos Comas representan un Espacio
+// console.log(c);
+
+// var a = 9;
+// var b = 6;
+
+// // POWER OF DESTRUCTURING
+
+// [b, a] = [9, 6];
+// console.log("A change it was 9 now is " + a);
+// console.log("B before it was 6 now is " + b);
+
+
+// var a ="damian";
+// var b = "salvador";
+
+
+// [a, b] = ["salvador", "damian"];
+
+// console.log(a);
+// console.log(b);
+
+// Sintaxis destructuring with rest 
+
+
+// var a; 
+// var b;
+// var arr;
+
+// [a, b, ...arr] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 200];
+// // Usando rest para asignar los valores que quedan sin asignar;
+
+// console.log(a)
+// console.log(b)
+// console.log(arr)
+
+
+// DESTRUCTURING FOR ARRAY;
+
+// const arregloInicial = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function removerTresPrimerosElementos(arreglo) {
+//     var nuevoArreglo; /* Aqui guardamos el ...rest haciendo destructuring */
+//     const [, , , ...nuevoArreglo] = arreglo;
+//     //We skip three spaces and them assign ...rest;
+//     return nuevoArreglo;
+// }
+
+// const arregloFinal = removerTresPrimerosElementos(arregloInicial);
+// console.log(arregloFinal);
+
+// SYNTAX FOR DESTRUCTURING WHEN PASS OBJECT AS ARGUMENT;
+
+var nuevoPerfilCliente = {
+    nombre: "Damian",
+    edad: 34,
+    nacionalidad: "colombiana",
+    ubicacion: "españa"
 };
 
 
-// const { MazoLopera: { papa: name, age} = familia;
-// console.log(MazoLoper(age));
-
-
-const { MazoLopera : { hijos: { name, age } } } = familia;
-console.log(name)
