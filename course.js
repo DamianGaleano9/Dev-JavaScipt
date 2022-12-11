@@ -2859,19 +2859,91 @@ CODIGO | RESULT
 // console.log(`Mi arreglo es ${JSON.stringify(miArreglo)}`)
 
 
-const crearPersona = (nombre, age, lenguage) => ({nombre, age, lenguage});
+// const crearPersona = (nombre, age, lenguage) => ({nombre, age, lenguage});
 
-console.log(crearPersona("damian", 34, "Spanish"));
+// console.log(crearPersona("damian", 34, "Spanish"));
 
 
 //METHODS 
 
-const persona = {
-    nombre: "Damian",
-    presentarse: function() {
-        return `Hy my name is ${this.nombre}`;
+// const persona = {
+//     nombre: "Damian",
+//     //Esto es una funcion asociada del objeto;
+//     presentarse() {
+//         return `Hy my name is ${this.nombre}`;
+//         //this se refiere al objeto con el que estamos trabajando;
+//         //Si el valor de una propiedad es una function se le llama Method;
+//     }
+// };
+
+
+// console.log(persona.presentarse());
+
+
+//CLASS las classes deben ser UpperCamelCase los nombres comienzan con mayusculas;
+
+
+// class TransbordadorEspacial {
+//     //inicializador esta funcion se llama automaticamente y toma el parametro;
+//     constructor(planeta){
+//         this.planeta = planeta;
+//     }
+// };
+
+// var zeus = new TransbordadorEspacial("jupiter");
+// console.log(zeus.planeta);
+ 
+
+// var apolo = new TransbordadorEspacial("Marte");
+// console.log(apolo.planeta);
+
+// class Mascota {
+//     constructor(nombre, edad) {
+//     this.nombre = nombre;
+//     this.edad = edad;
+//     }
+// }
+
+// var miPet = new Mascota("Isis", 4);
+// console.log(miPet.nombre);
+// console.log(miPet.edad);
+
+
+// var miCat = new Mascota("Silvestre", 3);
+// console.log(miCat.nombre);
+// console.log(miCat.edad);
+
+//Puedo reutilizar este codigo para crear muchos objetos :)
+
+
+// GETTERS AND SETTERS
+
+
+class Libro {
+    constructor(autor) {
+        this.autor = autor;
+        //Para proteger la propiedad se agrega un _autor y se da acceso
+        //con getters and setters a la propiedad privada
     }
-};
+    get autor() {
+        return this._autor;
+    }
+
+    set autor(nuevoAutor) {
+        this._autor = nuevoAutor;
+    }
+}   
+
+//Aqui el get hace la llamada a la propiedad;
+const libro = new Libro("Anonimo");
+console.log(libro.autor);
 
 
-console.log(persona.presentarse());
+//Vemos el Setter funcionando Actualizando la propiedad;
+libro.autor = "Damian Galeano";
+console.log(libro._autor)
+
+
+//FINAL DEL CURSO :) CONGRATULATIONS TO ME TOO MANY HOURS;
+// THANKS DEVCAMP
+// :)
