@@ -2791,11 +2791,87 @@ CODIGO | RESULT
 
 // SYNTAX FOR DESTRUCTURING WHEN PASS OBJECT AS ARGUMENT;
 
-var nuevoPerfilCliente = {
+// var nuevoPerfilCliente = {
+//     nombre: "Damian",
+//     edad: 34,
+//     nacionalidad: "colombiana",
+//     ubicacion: "españa"
+// };
+
+
+// // const actualizarPerfil = (informacionDelPerfil) => {
+// //     //Queremos hacer el destructuring del object pasado como
+// //     //argument;
+// //     const {nombre, edad, nacionalidad, ubicacion} = informacionDelPerfil;
+// //     console.log(nombre);
+// //     console.log(edad);
+// //     console.log(nacionalidad);
+// //     console.log(ubicacion);
+// // }
+
+// // console.log(nuevoPerfilCliente);
+
+
+// //AHORA VAMOS A DESCOMPONER EL OBJECT EN LA LISTA DE PARAMETROS PARA ASIGNARLO A VARIABLES INDIVIDUALES;
+
+
+// const actualizarPerfilDestructuring = ({nombre, edad, nacionalidad, ubicacion}) => {
+//     //Aqui en los parametros abrimos corchetes y pasamos el objeto destructuring;
+//     console.log(nombre);
+//     console.log(edad);
+//     console.log(nacionalidad);
+//     console.log(ubicacion);
+//     //Estas variables se pueden usar localmente en la function
+// };
+
+// console.log(actualizarPerfilDestructuring(nuevoPerfilCliente));
+
+// const estadisticas = {
+//     max: 56.78,
+//     desviacion: 4.34,
+//     mediana: 34.54,
+//     moda: 23.87,
+//     min: -0.75
+// }
+
+
+// const puntoMedio = ({max, min}) => (max + min) / 2.0;
+
+// console.log(puntoMedio(estadisticas));
+
+
+// BACKSTICK
+
+// var a = 6;
+// console.log(`El valor de a es ${a}`);
+
+// var nombre = "Damian";
+// var age = 34;
+
+
+
+// console.log(`Hy my  name is ${nombre} and my age is ${age}`);
+
+
+// var miArreglo = [1,2,3,4,5,6,7,8,9];
+
+
+// console.log(`Mi arreglo es ${JSON.stringify(miArreglo)}`)
+
+
+const crearPersona = (nombre, age, lenguage) => ({nombre, age, lenguage});
+
+console.log(crearPersona("damian", 34, "Spanish"));
+
+
+//METHODS 
+
+const persona = {
     nombre: "Damian",
-    edad: 34,
-    nacionalidad: "colombiana",
-    ubicacion: "españa"
+    presentarse: function() {
+        return `Hy my name is ${this.nombre}`;
+    }
 };
 
 
+console.log(persona.presentarse());
